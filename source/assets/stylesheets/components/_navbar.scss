@@ -28,7 +28,6 @@
   padding: 10px 20px;
   border-top: 1px solid $dark-grey;
   border-bottom: 1px solid $dark-grey;
-  cursor: pointer;
 }
 
 .navbar-item:hover:not(#dropdown-link), .dropdown-item:hover {
@@ -42,7 +41,6 @@
   letter-spacing: 2px;
   cursor: pointer;
   text-decoration: none;
-  padding-bottom: 10px;
 }
 
 .navbar-link:hover {
@@ -59,4 +57,7 @@
 #dropdown-trigger-link {
   text-decoration: none;
   color: $dark-grey;
+  font-size: 18px;
+  font-family: $headers-font;
+  letter-spacing: 2px;
 }
