@@ -1,3 +1,3 @@
-# E.ogier Sophrologie Website
+# E.Ogier Sophrologie Website
 
 
