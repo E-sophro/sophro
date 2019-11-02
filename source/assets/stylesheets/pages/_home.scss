@@ -1,5 +1,5 @@
 #home-page {
-  margin-top: 20px;
+  // margin-top: 20px;
 }
 
 .banner {
@@ -46,6 +46,82 @@
 .home-header {
   margin-top: 30px;
   font-size: 1.1em;
-  font-style: italic;
   text-align: center;
 }
+
+.title {
+  h1 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+    font-size: 50px;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+}
+
+.sophro-card {
+  padding: 0 25px 25px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+// flipping card
+.home-card {
+  margin: 20px 0 40px 0;
+  box-shadow: 7px 6px 15px -5px rgba(0,0,0,0.6);
+  border-radius: 5px;
+  padding: 15px;
+  img {
+    width: 100%;
+    height: 200px;
+  }
+  h2 {
+    margin: 15px 0;
+    font-size: 28px;
+    color: $salmon;
+  }
+}
+.img-container {
+  text-align: center;
+}
+  // For bloody IE11 grid supports
+#card-1 {
+  -ms-grid-column: 1;
+}
+#card-2 {
+  -ms-grid-column: 2;
+}
+#card-3 {
+  -ms-grid-column: 3;
+}
+
+.card-text {
+  min-height: 120px;
+}
+
+.card-link-wrapper {
+  text-align: center;
+}
+
+.card-link {
+  color: $dark-grey;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  &:hover {
+  color: $dark-grey;
+  }
+}
+
+
+
+@supports (display:-ms-grid) {
+  .flip-card {
+    margin: 25px;
+    margin-left: 0;
+  }
+  .flip-card:first-child { margin-left: 25px; }
+}
+// END
