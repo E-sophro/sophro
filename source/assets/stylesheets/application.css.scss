@@ -9,3 +9,10 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+
+.separator-beige {
+  border-top: 1px solid $beige;
+  margin-top: 0;
+}
