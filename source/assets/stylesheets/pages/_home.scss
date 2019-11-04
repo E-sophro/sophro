@@ -1,3 +1,4 @@
+// SECTION BANNER
 .banner {
   background-size: cover;
   background-attachment: fixed;
@@ -38,22 +39,19 @@
   transition: opacity 0.3s ease;
   opacity: 0.6;
 }
+// END SECTION BANNER
 
-.home-header {
+// SECTION HOME CONTENT
+.description-text {
   margin-top: 30px;
   font-size: 1.1em;
   text-align: center;
 }
 
-.title {
-  h1 {
-    text-align: center;
-    margin: 50px 0 20px 0;
-    font-size: 50px;
-    padding-bottom: 5px;
-    text-decoration: underline;
-    text-underline-position: under;
-  }
+.separator-grey {
+  border: 1px solid $salmon;
+  width: 20%;
+  margin: 30px auto;
 }
 
 .sophro-card {
@@ -119,6 +117,104 @@
   .flip-card:first-child { margin-left: 25px; }
 }
 // END
+// END SECTION HOME CONTENT
+
+// SECTION SYNDICATE
+
+// END SECTION SYNDICATE
+
+// SECTION TESTIMONY
+.testimony-section {
+  background: linear-gradient(130deg, #EBD0B7, #EB8F72);
+  background-size: 400% 400%;
+  animation: gradient 16s ease infinite;
+}
+
+.testimony-content {
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  min-width: 300px;
+  h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    color: $white;
+    margin: 20px 0;
+  }
+}
+
+.testimony-container {
+  margin: 0 20px;
+  position: relative;
+}
+
+.testimony-container .portrait {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimony-container .testimony {
+  position: relative;
+  z-index: 600;
+  padding: 40px 0 40px 180px;
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 1.8;
+  color: $white;
+}
+.testimony-container .testimony p {
+  position: relative;
+  margin-bottom: 20px;
+  font-family: $headers-font;
+}
+.testimony-container .testimony p:first-child:before {
+  content: '\201C';
+  color: rgba(255, 255, 255, 0.44);
+  font-size: 7.5em;
+  opacity: 1;
+  position: absolute;
+  top: -.5em;
+  left: -.3em;
+  z-index: -10;
+}
+.testimony-container .testimony cite {
+  display: block;
+  font-size: 14px;
+}
+.testimony-container .testimony cite span {
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+// END SECTION TESTIMONY
+
+// SECTION QUOTE
+.quote {
+  margin-bottom: 40px;
+}
 
 .quote-wrapper {
   display: flex;
@@ -147,3 +243,4 @@
   font-weight: bold;
   text-align: center;
 }
+// END SECTION QUOTE
