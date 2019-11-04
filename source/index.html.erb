@@ -2,7 +2,7 @@
 title: Emilie Ogier Sophrologie
 ---
 <section id="home-page">
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://res.cloudinary.com/duzajevzf/image/upload/v1572701042/flower_banner.jpg);">
+  <section class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(https://res.cloudinary.com/duzajevzf/image/upload/v1572701042/flower_banner.jpg);">
     <div class="container">
       <h1>Sophrologie Relationnelle</h1>
       <p>Emilie Ogier</p>
@@ -10,50 +10,65 @@ title: Emilie Ogier Sophrologie
       <p><small>07 85 24 49 80</small></p>
       <%= link_to "Contactez-Moi", "contact.html", class: "banner-btn btn btn-ghost" %>
     </div>
-  </div>
-  <div class="home-header container">
-    <p>Dans un monde où tout va toujours plus vite, nous pouvons faire de plus en plus de choses tout en ayant l’impression d’avoir de moins en moins de temps. La société d’aujourd’hui est trop souvent celle du « faire », au détriment de l’ « être ».</p>
-    <p>La sophrologie peut vous aider à faire une pause. A prendre du temps pour vous.</p>
-  </div>
-  <div class="sophrologie-presentation">
-    <div class="title">
-      <h1>La sophrologie</h1>
+  </section>
+  <section class="home-content container">
+    <div class="home-header">
+      <p>Dans un monde où tout va toujours plus vite, nous pouvons faire de plus en plus de choses tout en ayant l’impression d’avoir de moins en moins de temps. La société d’aujourd’hui est trop souvent celle du « faire », au détriment de l’ « être ».</p>
+      <p>La sophrologie peut vous aider à faire une pause. A prendre du temps pour vous.</p>
     </div>
-    <div class="sophro-card container">
-      <div class="home-card" id="card-1">
-        <div class="img-container">
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572714317/poppy-thumb.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
-        </div>
-        <h2>C'est quoi ?</h2>
-        <p class="card-text">La sophrologie est une méthode corporelle qui repose sur la <strong>respiration</strong>, des mouvements de <strong>relaxation dynamique</strong> et des techniques de <strong>visualisations positives</strong>.</p>
-        <hr class="separor-grey">
-        <div class="card-link-wrapper">
-          <%= link_to "En savoir plus", "origines_et_definition.html", class:"card-link" %>
-        </div>
+    <div class="sophrologie-presentation">
+      <div class="title">
+        <h1>La sophrologie</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo porro aperiam quidem nemo inventore aut vel adipisci soluta vitae sequi quis officia qui libero enim voluptatibus distinctio reprehenderit, ex maiores!</p>
       </div>
-      <div class="home-card" id="card-2">
-        <div class="img-container">
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572713666/hands.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
+      <div class="sophro-card">
+        <div class="home-card" id="card-1">
+          <div class="img-container">
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572714317/poppy-thumb.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
+          </div>
+          <h2>C'est quoi ?</h2>
+          <p class="card-text">La sophrologie est une méthode corporelle qui repose sur la <strong>respiration</strong>, des mouvements de <strong>relaxation dynamique</strong> et des techniques de <strong>visualisations positives</strong>.</p>
+          <hr class="separor-grey">
+          <div class="card-link-wrapper">
+            <%= link_to "En savoir plus", "origines_et_definition.html", class:"card-link" %>
+          </div>
         </div>
-        <h2>Pour qui ?</h2>
-        <p class="card-text">La sophrologie s'adresse aux enfants, adolescents, adultes et personnes âgées.</p>
-        <hr class="separor-grey">
-        <div class="card-link-wrapper">
-          <%= link_to "En savoir plus", "champ_application.html", class:"card-link" %>
+        <div class="home-card" id="card-2">
+          <div class="img-container">
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572713666/hands.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
+          </div>
+          <h2>Pour qui ?</h2>
+          <p class="card-text">La sophrologie s'adresse aux enfants, adolescents, adultes et personnes âgées.</p>
+          <hr class="separor-grey">
+          <div class="card-link-wrapper">
+            <%= link_to "En savoir plus", "champ_application.html", class:"card-link" %>
+          </div>
         </div>
-      </div>
-      <div class="home-card" id="card-3">
-        <div class="img-container">
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572713667/dandelion.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
+        <div class="home-card" id="card-3">
+          <div class="img-container">
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572713667/dandelion.jpg", class: "card-pic", alt: "Emilie Ogier Sophrologie" %>
+          </div>
+          <h2>Pour quoi?</h2>
+          <p class="card-text">La sophrologie est source d’équilibre, de bien-être, d’un regard positif sur l’existence. La sophrologie vous aide à identifier les ressources qui sont en vous et à les développer.</p>
+          <hr class="separor-grey">
+          <div class="card-link-wrapper">
+            <%= link_to "En savoir plus", "champ_application.html", class:"card-link" %>
+          </div>
         </div>
-        <h2>Pour quoi?</h2>
-        <p class="card-text">La sophrologie est source d’équilibre, de bien-être, d’un regard positif sur l’existence. La sophrologie vous aide à identifier les ressources qui sont en vous et à les développer.</p>
-        <hr class="separor-grey">
-        <div class="card-link-wrapper">
-          <%= link_to "En savoir plus", "champ_application.html", class:"card-link" %>
-        </div>
-      </div>
 
+      </div>
     </div>
-  </div>
+  </section>
+  <section class='sophro-syndicate'></section>
+  <section class="testimony"></section>
+  <section class="quote container">
+    <div class="quote-wrapper">
+      <i class="fas fa-map-marker" id="marker-left"></i>
+      <div class="quote-text">
+        <p>"(...) regarde chaque jour le monde comme si c'était la première fois. Alors j’ai suivi ton conseil et je me suis appliqué. La première fois. Je contemplais la lumière, les couleurs, les arbres, les oiseaux, les animaux. Je sentais l’air passer dans mes narines et me faire respirer. J’entendais les voix qui montaient dans le couloir comme dans la voute d’une cathédrale. Je me trouvais vivant. Je frissonnais de pure joie. Le bonheur d’exister. J’étais émerveillé."</p>
+      </div>
+      <i class="fas fa-map-marker" id="marker-right"></i>
+    </div>
+    <p class="author">Oscar et la dame rose - Eric-Emmanuel Schmitt</p>
+  </section>
 </section>

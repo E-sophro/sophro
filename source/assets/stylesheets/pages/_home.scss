@@ -1,7 +1,3 @@
-#home-page {
-  // margin-top: 20px;
-}
-
 .banner {
   background-size: cover;
   background-attachment: fixed;
@@ -115,8 +111,6 @@
   }
 }
 
-
-
 @supports (display:-ms-grid) {
   .flip-card {
     margin: 25px;
@@ -125,3 +119,31 @@
   .flip-card:first-child { margin-left: 25px; }
 }
 // END
+
+.quote-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 50px auto;
+}
+
+.fa-map-marker {
+  font-size: 20px;
+  color: $green;
+}
+#marker-left {
+  transform: rotate(-90deg);
+}
+#marker-right {
+  transform: rotate(90deg);
+}
+
+.quote-text p {
+  font-style: italic;
+  margin: 8px 20px 0 20px;
+  padding: 0 20px;
+}
+
+.author {
+  font-weight: bold;
+  text-align: center;
+}
