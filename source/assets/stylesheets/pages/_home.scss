@@ -12,6 +12,7 @@
   text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
   font-size: 42px;
   font-weight: bold;
+  font-family: $main-header-font;
 }
 
 .banner p {
@@ -48,10 +49,20 @@
   text-align: center;
 }
 
-.separator-grey {
+.separator-salmon {
   border: 1px solid $salmon;
   width: 20%;
   margin: 30px auto;
+}
+
+.sophrologie-presentation {
+  margin: 25px auto;
+  .title-sophro {
+    text-align: center;
+    font-family: $main-header-font;
+    font-size: 2.8em;
+    text-decoration: underline;
+  }
 }
 
 .sophro-card {
@@ -136,8 +147,8 @@
   width: 80%;
   max-width: 1200px;
   min-width: 300px;
-  h2 {
-    font-size: 2.8rem;
+  h3 {
+    font-size: 2.6rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     text-align: center;
