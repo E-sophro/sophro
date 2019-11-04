@@ -81,10 +81,24 @@ title: Emilie Ogier Sophrologie
     </div>
   </div>
   </section>
-  <section class='sophro-syndicate'>
-      <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886062/syndicat_logo.jpg", class: "syndicats-logos", alt: "Logo syndicats sophrologues professionnels"%>
-      <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886061/fede_sophro_logo.png", class: "syndicats-logos", alt: "Logo fédérations des écoles professionnelles en sophrologie"%>
-      <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886062/sophro_formation_logo.png", class: "syndicats-logos", alt: "Logo centre de formation zuili"%>
+  <section class="sophro-syndicate">
+    <div class="syndicat-links-wrapper">
+      <% link_to "https://www.syndicat-sophrologues-professionnels.fr/", class:"syndicats-link", target:"_blank", rel: "noopener noreferrer" do %>
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886062/syndicat_logo.jpg", class: "syndicats-logos", alt: "Logo syndicats sophrologues professionnels"%>
+      <% end %>
+    </div>
+    <div class="syndicat-links-wrapper">
+      <% link_to "https://www.feps-sophrologie.fr/", class:"syndicats-link", target:"_blank", rel: "noopener noreferrer" do %>
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886061/fede_sophro_logo.png", class: "syndicats-logos", alt: "Logo fédérations des écoles professionnelles en sophrologie"%>
+      <% end %>
+    </div>
+    <div class="syndicat-links-wrapper">
+      <% link_to "https://sophrologie-relationnelle.fr/", class:"syndicats-link", target:"_blank", rel: "noopener noreferrer" do %>
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1572886062/sophro_formation_logo.png", class: "syndicats-logos", id: "formation-logo", alt: "Logo centre de formation zuili"%>
+      <% end %>
+    </div>
+
+
   </section>
   <section class="quote container">
     <div class="quote-wrapper">

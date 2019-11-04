@@ -130,10 +130,6 @@
 // END
 // END SECTION HOME CONTENT
 
-// SECTION SYNDICATE
-
-// END SECTION SYNDICATE
-
 // SECTION TESTIMONY
 .testimony-section {
   background: linear-gradient(130deg, #EBD0B7, #EB8F72);
@@ -255,3 +251,31 @@
   text-align: center;
 }
 // END SECTION QUOTE
+
+// SECTION SYNDICATE
+.sophro-syndicate {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  margin: 60px 70px 80px 70px;
+}
+
+.syndicat-links-wrapper {
+  box-shadow: 4px 4px 8px 0px rgba(100, 100, 100, 0.4);
+}
+
+.syndicat-links-wrapper:hover {
+  transform: scale(1.1);
+}
+
+.syndicats-logos {
+  width: 150px;
+  height: auto;
+}
+
+#formation-logo {
+  width: 200px;
+}
+
+
+// END SECTION SYNDICATE
