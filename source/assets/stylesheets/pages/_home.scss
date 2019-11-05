@@ -1,16 +1,9 @@
 // SECTION BANNER
-.banner {
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .home-title {
   padding: 100px 0;
 }
 
-.banner h1 {
+.home-banner h1 {
   margin: 0 0 15px 0;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.8);
   font-size: 42px;
@@ -18,14 +11,14 @@
   font-family: $main-header-font;
 }
 
-.banner p {
+.home-banner p {
   font-size: 20px;
   opacity: 0.8;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 1);
   margin-bottom:0;
 }
 
-.banner-btn {
+.home-banner-btn {
   margin-top:15px;
   margin-left: -5px;
 }

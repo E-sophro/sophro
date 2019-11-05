@@ -1,0 +1,20 @@
+.banner {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-pages {
+  height: 350px;
+  h1 {
+    font-family: $main-header-font;
+    font-size: 48px;
+    color: $white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.page-title {
+  padding: 250px 0 0 0;
+}
