@@ -1,9 +1,9 @@
 {
-  "name": "middleman-webpack-template",
+  "name": "sophro",
   "version": "1.0.0",
-  "description": "template",
+  "description": "Emilie Ogier - Sophrologie Website",
   "main": "index.js",
-  "repository": "https://github.com/Xelaflash/middleman-webpack-template",
+  "repository": "https://github.com/Xelaflash/sophro",
   "author": "agros",
   "license": "MIT",
   "devDependencies": {

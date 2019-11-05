@@ -7,7 +7,7 @@ set :images_dir, 'assets/images'
 set :js_dir,     'assets/javascripts'
 
 activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
+  prefix.browsers = 'last 2 versions'
 end
 
 activate :external_pipeline,
