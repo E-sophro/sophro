@@ -86,17 +86,11 @@
   overflow: auto;
   white-space: nowrap;
   transition: 0.6s;
-  padding-top: 100px;
+  padding-top: 40px;
   ul {
-    margin: 40px 0 0 10px;
-  }
-  li {
-    margin-left: 10px;
-    width: fit-content;
-    padding: 20px 30px;
+    margin-top: 20px;
   }
 }
-
 .show-sidenav {
   width: 100%;
   opacity: 1;
@@ -106,29 +100,66 @@
   position: relative;
 }
 
-.sidenav a {
-  text-decoration: none;
-  font-size: 22px;
-  font-family: $headers-font;
-  color: $white;
+.sidenav-item {
+  margin: 0 100px;
+  width: fit-content;
+  padding: 15px 0px;
 }
 
-.sidenav a:hover {
-  color: $yellow;
+.sidenav-link {
+  text-decoration: none;
+  font-size: 26px;
+  font-family: $headers-font;
+  color: $dark-grey;
+}
+
+.sidenav-link:hover {
+  color: $white;
 }
 
 .social-wrapper {
   text-align: center;
+  position: absolute;
+  bottom: 50px;
+  left: 45%;
 }
 
 .social-links-sidenav a {
-  color: $white;
+  color: $dark-grey;
   cursor: pointer;
-  font-size: 36px;
+  font-size: 48px;
   padding: 0px 20px;
   &:hover {
-    color: $yellow;
+    color: $white;
   }
+}
+
+.sidenav-collapse-item {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.collapse-li {
+  margin-left: 100px;
+  padding: 10px 0;
+}
+
+.collapse-menu-trigger[aria-expanded="true"] {
+  color: $white;
+}
+
+#sidenavCollapse {
+  list-style: circle inside;
+}
+
+.sidenav-collapse-item {
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+.sidenav-collapse-item:hover {
+  color: $white;
+  text-decoration: none;
 }
 
 // Hamburger
@@ -219,10 +250,6 @@
     }
   }
 }
-
-
-
-
 
 // responsive styling
 @media only screen

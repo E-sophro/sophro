@@ -6,15 +6,16 @@
 }
 
 .banner-pages {
-  height: 350px;
+  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url('https://res.cloudinary.com/duzajevzf/image/upload/v1572701042/flower_banner.jpg');
+  height: 300px;
   h1 {
     font-family: $main-header-font;
     font-size: 48px;
     color: $white;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
   }
 }
 
 .page-title {
-  padding: 250px 0 0 0;
+  padding: 200px 0 0 0;
 }

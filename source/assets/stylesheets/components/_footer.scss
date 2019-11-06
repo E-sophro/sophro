@@ -54,7 +54,7 @@
 }
 
 .footer-bottom {
-  padding-bottom: 15px;
+  padding: 20px 0;
   p {
     font-size: 14px;
     margin: 0 10px;
@@ -63,18 +63,26 @@
 
 #flex-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
-  padding: 0 100px;
+  padding: 0 50px;
 }
 
-.logo-alex {
-  height: 40px;
-  padding-left: 10px;
+#brand, #legals, #copyright {
+  width: 250px;
 }
-.logo-alex:hover {
-  transform: scale(1.1);
+
+#legals {
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $dark-grey;
+    text-decoration: underline;
+  }
 }
+
 
 @media only screen
   and (min-device-width: 320px)
@@ -86,7 +94,7 @@
     padding: 0;
   }
 
-  #bottom-footer-row {
+  #brand {
     margin-bottom: 10px;
   }
 
