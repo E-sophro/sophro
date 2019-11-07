@@ -27,8 +27,8 @@
 /* Navbar link */
 .navbar-item {
   padding: 10px 0;
-  border-top: 1px solid $dark-grey;
-  border-bottom: 1px solid $dark-grey;
+  border-top: 1px solid $dark-gray;
+  border-bottom: 1px solid $dark-gray;
 }
 
 .navbar-item:hover:not(#dropdown-link), .dropdown-item:hover {
@@ -37,7 +37,7 @@
 
 .navbar-link {
   padding: 12px 20px;
-  color: $dark-grey;
+  color: $dark-gray;
   font-size: 18px;
   font-family: $headers-font;
   letter-spacing: 2px;
@@ -47,7 +47,7 @@
 
 .navbar-link:hover {
   text-decoration: none;
-  color: $dark-grey;
+  color: $dark-gray;
 }
 
 .dropdown-menu {
@@ -58,7 +58,7 @@
 
 #dropdown-trigger-link {
   text-decoration: none;
-  color: $dark-grey;
+  color: $dark-gray;
   font-size: 18px;
   font-family: $headers-font;
   letter-spacing: 2px;
@@ -87,10 +87,12 @@
   white-space: nowrap;
   transition: 0.6s;
   padding-top: 40px;
-  ul {
-    margin-top: 20px;
-  }
 }
+.sidenav-ul {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
 .show-sidenav {
   width: 100%;
   opacity: 1;
@@ -101,7 +103,7 @@
 }
 
 .sidenav-item {
-  margin: 0 100px;
+  margin-left: 40px;
   width: fit-content;
   padding: 15px 0px;
 }
@@ -110,7 +112,7 @@
   text-decoration: none;
   font-size: 26px;
   font-family: $headers-font;
-  color: $dark-grey;
+  color: $dark-gray;
 }
 
 .sidenav-link:hover {
@@ -119,11 +121,11 @@
 
 .social-wrapper {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .social-links-sidenav a {
-  color: $dark-grey;
+  color: $dark-gray;
   cursor: pointer;
   font-size: 48px;
   padding: 0px 20px;
@@ -148,10 +150,11 @@
 
 #sidenavCollapse {
   list-style: circle inside;
+  margin-top: 10px;
 }
 
 .sidenav-collapse-item {
-  color: $dark-grey;
+  color: $dark-gray;
   text-decoration: none;
 }
 
@@ -181,7 +184,7 @@
     display: block;
     width: 40px;
     height: 4px;
-    background-color: $gray;
+    background-color: $dark-gray;
     transition-property: transform;
     transition-duration: 0.15s;
     transition-timing-function: ease;
@@ -279,7 +282,16 @@
   and (min-device-width: 320px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 2) {
-  .sidenav ul {
-  margin: 10px 0 0 10px;
+  .sidenav-ul {
+  margin: 50px 0 0 10px;
+  }
+  .sidenav-link {
+    font-size:22px;
+  }
+  .collapse-li {
+    margin-left: 50px;
+  }
+  .sidenav-collapse-item {
+    font-size: 16px;
   }
 }

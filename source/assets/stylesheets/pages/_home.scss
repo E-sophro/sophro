@@ -23,8 +23,8 @@
 }
 
 .btn-ghost {
-  color: $dark-grey;
-  border: 1px solid $dark-grey;
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: lighter;
@@ -105,12 +105,12 @@
 }
 
 .card-link {
-  color: $dark-grey;
+  color: $dark-gray;
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
   &:hover {
-  color: $dark-grey;
+  color: $dark-gray;
   }
 }
 
@@ -252,7 +252,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-  margin: 60px 70px 80px 70px;
+  margin: 80px 70px;
 }
 
 .syndicat-links-wrapper {
@@ -274,16 +274,55 @@
 // END SECTION SYNDICATE
 
 // RESPONSIVE
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-
-}
-
 @media (max-width: 768px) {
   .home-banner h1 {
     font-size: 36px;
   }
+  .testimony-container .testimony {
+    padding: 40px 0 40px 120px;
+    font-size: 18px;
+  }
+  .testimony-container .portrait {
+    width: 100px;
+    height: 100px;
+  }
+  .testimony-content h3 {
+    font-size: 2.2rem;
+  }
+  .testimony-content {
+    width: 100%;
+  }
+  .quote-text p {
+    padding: 0 0px;
+  }
+  .sophro-syndicate {
+    margin: 80px 40px;
+  }
+  .syndicats-logos {
+    width: 100px;
+  }
+  #formation-logo {
+    width: 150px;
+  }
+  .footer-social {
+    margin: 20px 25px 20px 0px;
+}
+  .contact-infos {
+    display: block;
+  }
+}
+
+// grids responsive
+@media (min-width: 100px)
+  and (max-width: 991px) {
   .home-title {
-    margin: 0 50px;
+    padding-left: 50px;
+  }
+  .sophro-card {
+    // IE11
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 450px;
+    margin: auto;
   }
 }
