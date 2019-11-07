@@ -10,6 +10,8 @@
 @import "components/index";
 @import "pages/index";
 
+
+//  Main utilities
 .page {
   margin-bottom: 50px;
 }
@@ -36,4 +38,47 @@
   list-style: inside;
   padding-left: 25px;
   line-height: 2rem;
+}
+
+.banner {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.banner-pages {
+  background-image: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1)), url('https://res.cloudinary.com/duzajevzf/image/upload/v1572701042/flower_banner.jpg');
+  height: 300px;
+  h1 {
+    font-family: $main-header-font;
+    font-size: 48px;
+    color: $white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.page-title {
+  padding: 200px 0 0 0;
+}
+
+@media (max-width: 991px) {
+  .banner-pages h1 {
+    font-size: 42px;
+  }
+  .page-title {
+    padding-left: 40px;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .page-title {
+    padding-left: 20px;
+  }
+  .page-container {
+    width: 100%;
+  }
 }
