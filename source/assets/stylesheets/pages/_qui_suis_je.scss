@@ -1,3 +1,13 @@
 .about_us_content {
   display: flex;
 }
+
+#syndicat-link {
+  color: $dark-gray;
+  text-decoration: underline;
+}
+
+#syndicat-link:hover {
+  color: $dark-gray;
+  text-decoration: none;
+}
