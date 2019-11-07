@@ -71,14 +71,11 @@
   }
 }
 
-.footer-bottom-item {
-  flex: 1 1 0;
-  width: 0;
-}
-
-// #brand, #legals, #copyright {
-//   width: 250px;
+// .footer-bottom-item {
+//   flex: 1 1 0;
+//   width: 0;
 // }
+
 
 #legals {
   a {
@@ -99,7 +96,16 @@
     display: block;
   }
   #flex-container {
-    padding: 0;
+    display: block;
     text-align: center;
+  }
+  .footer-bottom-item {
+    margin: 20px 0;
+  }
+  #brand {
+    margin-top:0;
+  }
+  #copyright {
+    margin-bottom: 0;
   }
 }
