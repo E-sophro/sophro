@@ -1,5 +1,7 @@
 .pic-container {
   margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
 }
 
 .thumb-pic {
@@ -13,5 +15,24 @@
   font-weight: bold;
   blockquote {
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and
+(max-width: 1300px) {
+  .not-visible-lg {
+    display: none;
+  }
+}
+@media only screen and
+(max-width: 1000px) {
+  .not-visible-md {
+    display: none;
+  }
+}
+@media only screen and
+(max-width: 768px) {
+  .not-visible-xs {
+    display: none;
   }
 }
