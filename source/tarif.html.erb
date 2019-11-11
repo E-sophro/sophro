@@ -13,7 +13,7 @@ title: Tarif - Emilie Ogier Sophrologie
         <h2 class="subtitle">Séances individuelles</h2>
         <p>A mon cabinet à Saint Chamas ou à domicile (frais de déplacement en supplément au-delà de 15 km).</p>
         <div class="card-indiv-wrapper">
-          <div class="seance-card" id="adult-card">
+          <div class="seance-card">
             <h3>Adultes</h3>
             <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-adults.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif adultes" %>
             <p class="price"> <strong>50€</strong> / la séance</p>
@@ -22,7 +22,7 @@ title: Tarif - Emilie Ogier Sophrologie
               <li>10 séances pour 400€</li>
             </ul>
           </div>
-          <div class="seance-card" id="kids-card">
+          <div class="seance-card">
             <h3>Enfants / adolescents</h3>
             <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif enfants/adolescents"%>
             <p class="price"><strong>40€</strong> / la séance</p>
@@ -31,10 +31,10 @@ title: Tarif - Emilie Ogier Sophrologie
               <li>10 séances pour 325€</li>
             </ul>
           </div>
-          <div class="seance-card" id="discount-card">
+          <div class="seance-card">
             <h3>Tarif réduits</h3>
             <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif réduits"%>
-            <p><small>(étudiants, retraités, pôle emploi)</small> </p>
+            <p><small>(étudiants, retraités, pôle emploi)</small></p>
             <p class="price"><strong>40€</strong> / la séance</p>
             <ul class="list-styled">
               <li>10 séances pour 350€</li>
@@ -42,8 +42,67 @@ title: Tarif - Emilie Ogier Sophrologie
           </div>
         </div>
         <p>Je propose également une séance "express" (une pause axée sur la détente et le lâcher prise), d'une durée de <strong>30 minutes</strong> environ pour <strong>25 €</strong>.</p>
-        <p>Veuillez <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'information.</p>
+        <p>Veuillez <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'informations.</p>
     </div>
+    <div class="seance-groupe-wrapper">
+      <h2 class="subtitle">Séances en groupe</h2>
+      <p>Constituer votre propre groupe ou rejoignez un groupe avec un thème précis (consultez les actualités).</p>
+      <p>À domicile ou en cabinet. <br>
+      Séances possibles à l'extérieur, dans le jardin adjacent, selon la météo et vos envies.</p>
+      <p><strong>Attention</strong> : le nombre de participants est limité. Votre inscription est nécessaire pour pouvoir vous accueillir dans les meilleures conditions.</p>
+      <div class="card-group-wrapper">
+        <div class="seance-card">
+          <h3>Groupes</h3>
+          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573491403/card-group.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances en groupe"%>
+          <p><small>(mini groupes de 3 - 4 personnes)</small></p>
+          <p class="price"><strong>15€</strong> / la séance</p>
+          <ul class="list-styled">
+            <li>10 séances pour 120€</li>
+          </ul>
+        </div>
+        <div class="seance-card">
+          <h3>Groupes Thématique</h3>
+          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573491403/card-group.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances thématique en groupe"%>
+          <p><small>Groupes de 5 à 10 personnes sur un thème spécifique (consulter les actualités)</small></p>
+          <p class="price"><strong>10€</strong> / par personne par séance</p>
+        </div>
+      </div>
+      <p> <strong>Entreprises, associations et institutions</strong> : je propose la création d’ateliers sur mesure en fonction de vos attentes.</p>
+      <p>Par exemple :</p>
+      <ul class="list-styled">
+        <li>Ateliers collectifs hebdomadaires ou bi-hebdomadaires</li>
+        <li>Ateliers collectifs à thème (gestion du stress, confiance en soi, cohésion d’équipe) : un trimestre pour approfondir un thème</li>
+        <li>Séances individuelles</li>
+        <li>Intervention ponctuelle sur un thème particulier</li>
+      </ul>
+      <p>Je vous invite à <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour un devis personnalisé.</p>
+    </div>
+    <div class="gift-card-wrapper">
+      <h2 class="subtitle">Carte cadeau « Découverte de la sophrologie »</h2>
+      <p>Vous souhaitez offrir un moment de bien-être et de détente à l’un de vos proches et ainsi leur permettre d’apprendre à se relaxer et à gérer le quotidien avec plus de sérénité ?</p>
+      <p>Je vous propose de leur offrir une carte cadeau pour découvrir la sophrologie en 1 à 3 séances individuelles.</p>
+      <ul class="list-styled">
+        <li><strong>Durée d’une séance</strong> : environ 1 heure</li>
+        <li><strong>Contenu de la séance</strong> :présentation de la sophrologie et pratique en position assise, debout et/ou allongée (apprendre à s’écouter, libérer les tensions, apprendre à se relaxer)</li>
+        <li><strong>Validité</strong> : 1 an</li>
+      </ul>
+      <br>
+      <p><strong><u>Tarif</u></strong> :</p>
+      <ul class="list-styled">
+        <li>50€ pour 1 séance « Découverte de la sophrologie »</li>
+        <li>90€ pour 2 séances « Découverte de la sophrologie »</li>
+        <li>135€ pour 3 séances « Découverte de la sophrologie »</li>
+      </ul>
+      <p>Retrait des cartes cadeaux sur place ou envoi par courrier, dès réception du règlement.</p>
+      <p>Je vous invite à <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'informations.</p>
+    </div>
+    <hr class="separator-salmon">
+    <p>Les séances ne sont pas remboursées par la sécurité sociale. <br>
+    Toutefois de plus en plus de mutuelles proposent des prises en charge (partielles ou complètes) de vos séances. <br>
+    <strong>Rapprochez-vous de votre mutuelle !</strong></p>
+    <p>Les forfaits sont réglables à l'avance et non remboursables. <br>
+    Toute séance qui n'est pas annulée 24h à l'avance est due dans son intégralité.</p>
+
 
   </div>
 </section>

@@ -7,6 +7,7 @@
 }
 
 .seance-card {
+  max-width: 305px;
   height: 350px;
   margin: 20px 0 40px 0;
   box-shadow: 7px 6px 15px -5px rgba(0,0,0,0.6);
@@ -31,4 +32,14 @@
 .price {
   margin-top: 10px;
   font-size: 18px;
+}
+
+.card-group-wrapper {
+  padding: 0 25px 25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.seance-indiv-wrapper, .seance-groupe-wrapper, .gift-card-wrapper {
+  margin-bottom: 80px;
 }
