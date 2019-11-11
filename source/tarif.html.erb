@@ -1,0 +1,49 @@
+---
+title: Tarif - Emilie Ogier Sophrologie
+---
+
+<section class="page" id="tarif">
+  <div class="banner banner-pages">
+    <div class="page-title container">
+      <h1>Tarif</h1>
+    </div>
+  </div>
+  <div class="tarif_content page-container container">
+    <div class="seance-indiv-wrapper">
+        <h2 class="subtitle">Séances individuelles</h2>
+        <p>A mon cabinet à Saint Chamas ou à domicile (frais de déplacement en supplément au-delà de 15 km).</p>
+        <div class="card-indiv-wrapper">
+          <div class="seance-card" id="adult-card">
+            <h3>Adultes</h3>
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-adults.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif adultes" %>
+            <p class="price"> <strong>50€</strong> / la séance</p>
+            <ul class="list-styled">
+              <li>5 séances pour 225€</li>
+              <li>10 séances pour 400€</li>
+            </ul>
+          </div>
+          <div class="seance-card" id="kids-card">
+            <h3>Enfants / adolescents</h3>
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif enfants/adolescents"%>
+            <p class="price"><strong>40€</strong> / la séance</p>
+            <ul class="list-styled">
+              <li>5 séances pour 175€</li>
+              <li>10 séances pour 325€</li>
+            </ul>
+          </div>
+          <div class="seance-card" id="discount-card">
+            <h3>Tarif réduits</h3>
+            <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarif réduits"%>
+            <p><small>(étudiants, retraités, pôle emploi)</small> </p>
+            <p class="price"><strong>40€</strong> / la séance</p>
+            <ul class="list-styled">
+              <li>10 séances pour 350€</li>
+            </ul>
+          </div>
+        </div>
+        <p>Je propose également une séance "express" (une pause axée sur la détente et le lâcher prise), d'une durée de <strong>30 minutes</strong> environ pour <strong>25 €</strong>.</p>
+        <p>Veuillez <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'information.</p>
+    </div>
+
+  </div>
+</section>

@@ -38,6 +38,17 @@
   list-style: inside;
   padding-left: 25px;
   line-height: 2rem;
+  text-align: left;
+}
+
+.dark-underline-link {
+  color: $dark-gray;
+  text-decoration: underline;
+}
+
+.dark-underline-link:hover {
+  color: $dark-gray;
+  text-decoration: none;
 }
 
 .banner {
