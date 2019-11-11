@@ -73,6 +73,7 @@
   padding: 200px 0 0 0;
 }
 
+//  RESPONSIVE
 @media (max-width: 991px) {
   .banner-pages h1 {
     font-size: 42px;
@@ -91,5 +92,21 @@
   }
   .page-container {
     width: 100%;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .banner-pages {
+    height: 200px;
+  }
+  .banner {
+  background-position: top;
+  }
+  .page-title, #seance_sophro-title  {
+    padding: 120px 0 0 0;
   }
 }

@@ -1,15 +1,31 @@
-.card-indiv-wrapper {
+.card-grid-wrapper {
   padding: 0 25px 25px;
   display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 25px;
+  margin: auto;
 }
+
+  // For bloody IE11 grid supports
+  #seance-card1, #group-card1 {
+    -ms-grid-column: 1;
+  }
+  #seance-card2, #group-card2 {
+    -ms-grid-column: 2;
+  }
+  #seance-card3 {
+    -ms-grid-column: 3;
+  }
+  #seance-card4 {
+    -ms-grid-column: 4;
+  }
+
 
 .seance-card {
   max-width: 305px;
   height: 350px;
-  margin: 20px 0 40px 0;
+  margin: 20px auto;
   box-shadow: 7px 6px 15px -5px rgba(0,0,0,0.6);
   border-radius: 5px;
   padding: 15px;
@@ -40,6 +56,18 @@
   justify-content: space-evenly;
 }
 
-.seance-indiv-wrapper, .seance-groupe-wrapper, .gift-card-wrapper {
-  margin-bottom: 80px;
+.seance-indiv-wrapper, .seance-groupe-wrapper, .gift-wrapper {
+  margin-bottom: 60px;
+}
+
+// grids responsive
+@media (max-width: 910px) {
+  .card-grid-wrapper{
+    // IE11
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .seance-card {
+    margin: 0 auto;
+  }
 }
