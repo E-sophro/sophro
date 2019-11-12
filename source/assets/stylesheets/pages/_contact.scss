@@ -1,22 +1,18 @@
 .contact-rdv {
   margin: 25px 0;
   padding: 0 20px;
+  text-align:center;
 }
 
 #contact-marker-right {
   margin-top:1px;
 }
 
-.contact-details-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 // Mapbox styling
 #map {
   height: 380px;
-  width: 450px;
+  width: 100%;
+  margin: 50px auto;
 }
 
 .mapboxgl-popup {
@@ -32,13 +28,13 @@
 
 // form
 .contact-form {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .wrap-contact100 {
   width: 100%;
   border-radius: 10px;
-  padding: 0 100px 25px 100px;
+  padding: 0;
 }
 
 .contact100-form-title {
@@ -125,18 +121,6 @@ textarea.input100 {
   margin-right: 10px;
 }
 
-@media (max-width: 768px) {
-  .wrap-contact100 {
-    padding: 72px 50px 25px 50px;
-  }
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100 {
-    padding: 72px 15px 25px 15px;
-  }
-}
-
 // Alert validate
 .validate-input {
   position: relative;
@@ -196,13 +180,43 @@ textarea.input100 {
   right: 28px;
 }
 
+// RESPONSIVE
 @media (max-width: 576px) {
   .alert-validate::before {
     padding: 0 30px 0 10px;
   }
-
   .true-validate::after,
   .btn-hide-validate {
     right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 0;
+  }
+  .wrap-contact100 {
+    padding: 20px 0 2px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #map {
+    height: 380px;
+    width: 450px;
+    margin: auto;
+  }
+  .wrap-contact100 {
+    width: 100%;
+    border-radius: 10px;
+    padding: 0 100px 25px 100px;
+  }
+  .contact-form {
+  margin-top: 100px;
   }
 }
