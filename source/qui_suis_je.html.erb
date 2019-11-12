@@ -9,7 +9,7 @@ title: Qui suis-je? - Emilie Ogier Sophrologie
     </div>
   </div>
   <div class="about_us_content container">
-    <div class="about_us_content_left">
+    <div class="about_us_content_left text-justify">
       <h2 class="subtitle">Présentation</h2>
       <p>J'ai d'abord travaillé pendant 8 ans en entreprise en tant que juriste. Au cours de mon expérience professionnelle, j’ai été confrontée à plusieurs reprises à des situations de stress ou à des situations conflictuelles au sein de mon travail. Je me suis tournée vers la sophrologie pour apprendre à mieux gérer mon stress et les difficultés rencontrées dans ma vie professionnelle.</p>
       <p>Convaincue de la méthode et souhaitant depuis quelques années me reconvertir dans un métier centré sur la relation d’aide à la personne, c’est avec enthousiasme que j'ai suivi une formation en Sophrologie Relationnelle® sur deux années.</p>
@@ -17,27 +17,33 @@ title: Qui suis-je? - Emilie Ogier Sophrologie
       <p>Aujourd'hui, dans l'exercice de mon métier de sophrologue, j'ai enfin trouvé le lien humain et le sens profond qui me manquait lors de mon premier métier.</p>
       <p>La sophrologie tient une place importante dans ma vie, professionnelle mais aussi personnelle. Je vis régulièrement les techniques pour moi, pour mon développement personnel mais aussi pour être cohérente dans ma pratique professionnelle.</p>
       <p>J'enrichie régulièrement ma pratique avec des stages de perfectionnement en sophrologie, et dans d'autres domaines complémentaires comme la méditation pleine conscience.​</p>
+      <div class="about_us_bottom">
+        <div class="formations">
+          <h2 class="subtitle">Formations</h2>
+          <ul class="list-styled">
+            <li>Sophrologie Relationnelle ®</li>
+            <li>Sophrologie Ludique ®</li>
+            <li>Sophrologie et Burn-out</li>
+            <li>Sophrologie et Douleurs​</li>
+          </ul>
+        </div>
+        <div class="deontologie">
+          <h2 class="subtitle">Déontologie</h2>
+          <p>Je me réfère strictement au Code de Déontologie du Syndicat des Sophrologues Professionnels dont je suis membre. <br> Pour votre information vous trouverez le lien ci-dessous :</p>
+          <%= link_to "Le métier de sophrologue", "https://www.syndicat-sophrologues-professionnels.fr/le-metier-de-sophrologue.html", class:"dark-underline-link", target:"_blank", rel: "noopener noreferrer" %>
+        </div>
+      </div>
     </div>
+    <hr class="d-block d-xl-none" id="about-separator">
     <div class="about_us_content_right">
-      <!-- mettre picture -->
-      <p>Je vous accueille au cabinet à Saint Chamas dans un espace d'<strong>écoute</strong>, de <strong>confidentialité</strong> , de <strong>respect</strong> et de <strong>bienveillance</strong>.</p>
-      <!-- mettre picture -->
-    </div>
-  </div>
-  <div class="about_us_bottom container">
-    <div class="formations">
-      <h2 class="subtitle">Formations</h2>
-      <ul class="list-styled">
-        <li>Sophrologie Relationnelle ®</li>
-        <li>Sophrologie Ludique ®</li>
-        <li>Sophrologie et Burn-out</li>
-        <li>Sophrologie et Douleurs​</li>
-      </ul>
-    </div>
-    <div class="deontologie">
-      <h2 class="subtitle">Déontologie</h2>
-      <p>Je me réfère strictement au Code de Déontologie du Syndicat des Sophrologues Professionnels dont je suis membre. <br> Pour votre information vous trouverez le lien ci-dessous :</p>
-      <%= link_to "Le métier de sophrologue", "https://www.syndicat-sophrologues-professionnels.fr/le-metier-de-sophrologue.html", class:"dark-underline-link", target:"_blank", rel: "noopener noreferrer" %>
+      <div class="img-container">
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573563181/portrait.jpg", class: "profile-pic-round rounded-circle", alt: "Portrait - Emilie Ogier Sophrologie" %>
+      </div>
+      <p id="about_text_right">Je vous accueille au cabinet à Saint Chamas dans un espace d'<strong>écoute</strong>, de <strong>confidentialité</strong> , de <strong>respect</strong> et de <strong>bienveillance</strong>.</p>
+      <div class="about-img-container">
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573562614/cabinet2.jpg", class: "about-pic", id:"about-pic1", alt: "Le cabinet - Emilie Ogier Sophrologie" %>
+        <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573562614/cabinet.jpg", class: "about-pic", id:"about-pic2", alt: "Le cabinet - Emilie Ogier Sophrologie" %>
+      </div>
     </div>
   </div>
 </section>
