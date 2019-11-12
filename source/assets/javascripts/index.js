@@ -5,8 +5,9 @@ import '@fortawesome/fontawesome-free/js/all';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
 // components JS files
-import { toogleNav } from './components/mobile_nav';
 import { initMapbox } from './components/init_mapbox';
+import { toogleNav } from './components/mobile_nav';
+import './components/form_validation';
 
 
 // Sidenav

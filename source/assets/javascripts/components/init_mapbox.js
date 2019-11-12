@@ -11,7 +11,7 @@ const initMapbox = () => {
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v10',
       center: shop, // starting position
-      zoom: 15 // starting zoom
+      zoom: 14 // starting zoom
     });
 
     // create the popup
