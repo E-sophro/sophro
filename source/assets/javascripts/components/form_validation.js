@@ -15,6 +15,7 @@ $('.validate-input .input100').each(function() {
 
 $('.validate-form').on('submit', () => {
   let check = true;
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < input.length; i++) {
     if (validate(input[ i ]) === false) {
       showValidate(input[ i ]);
