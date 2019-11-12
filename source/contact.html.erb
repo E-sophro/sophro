@@ -1,6 +1,7 @@
 ---
 title: Contact - Emilie Ogier Sophrologie
 ---
+
 <section class="page" id="contact">
   <div class="banner banner-pages">
     <div class="page-title container">
@@ -26,49 +27,40 @@ title: Contact - Emilie Ogier Sophrologie
         <div id="map" data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
       </div>
     </div>
-
     <div class="contact-form container">
-
-        <div class="wrap-contact100">
-          <form class="contact-form validate-form" autocomplete="off"
-          action="" method="post">
-            <span class="contact100-form-title">Contactez-moi</span>
-
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <div class="wrap-input100 validate-input" data-validate="Merci d'indiquer votre nom complet">
-                  <input class="input100 form-input" type="text" name="name" placeholder="Prenom Nom">
-                  <span class="focus-input100"></span>
-                </div>
-              </div>
-              <div class="col-xs-12 col-sm-6">
-                <div class="wrap-input100 validate-input" data-validate = "Merci de rentrer un email valide: aa@abc.com">
-                  <input class="input100 form-input" type="text" name="email" placeholder="Email">
-                  <span class="focus-input100"></span>
-                </div>
+      <div class="wrap-contact100">
+        <form class="contact-form validate-form" autocomplete="off"
+        action="" method="post">
+          <span class="contact100-form-title">Contactez-moi</span>
+          <div class="row">
+            <div class="col-xs-12 col-sm-6">
+              <div class="wrap-input100 validate-input" data-validate="Merci d'indiquer votre nom complet">
+                <input class="input100 form-input" type="text" name="name" placeholder="Prenom Nom">
+                <span class="focus-input100"></span>
               </div>
             </div>
-
-
-            <div class="wrap-input100 validate-input" data-validate="Merci de préciser un objet">
-              <input class="input100 form-input" type="text" name="subject" placeholder="Objet">
-              <span class="focus-input100"></span>
+            <div class="col-xs-12 col-sm-6">
+              <div class="wrap-input100 validate-input" data-validate = "Merci de rentrer un email valide (ex: aa@abc.com)">
+                <input class="input100 form-input" type="text" name="email" placeholder="Email">
+                <span class="focus-input100"></span>
+              </div>
             </div>
-
-            <div class="wrap-input100 validate-input" data-validate = "Merci d'écrire un message">
-              <textarea class="input100 form-input" name="message" placeholder="Rédigez ici votre message"></textarea>
-              <span class="focus-input100"></span>
-            </div>
-
-            <div class="container-contact100-form-btn">
-              <button class="contact100-form-btn">
-                <span><i class="far fa-paper-plane"></i>Envoyer</span>
-              </button>
-            </div>
-          </form>
-        </div>
-
+          </div>
+          <div class="wrap-input100 validate-input" data-validate="Merci de préciser un objet">
+            <input class="input100 form-input" type="text" name="subject" placeholder="Objet">
+            <span class="focus-input100"></span>
+          </div>
+          <div class="wrap-input100 validate-input" data-validate = "Merci d'écrire un message">
+            <textarea class="input100 form-input" name="message" placeholder="Rédigez ici votre message"></textarea>
+            <span class="focus-input100"></span>
+          </div>
+          <div class="container-contact100-form-btn">
+            <button class="contact100-form-btn">
+              <span><i class="far fa-paper-plane"></i>Envoyer</span>
+            </button>
+          </div>
+        </form>
+      </div>
     </div>
-
   </div>
 </section>
