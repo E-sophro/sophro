@@ -220,6 +220,7 @@
 .quote-wrapper {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin: 50px auto;
 }
 
@@ -227,10 +228,10 @@
   font-size: 20px;
   color: $green;
 }
-#marker-left {
+.marker-left {
   transform: rotate(-90deg);
 }
-#marker-right {
+.marker-right {
   transform: rotate(90deg);
 }
 
