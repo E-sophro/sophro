@@ -13,5 +13,24 @@ title: Contact - Emilie Ogier Sophrologie
       <p class="contact-rdv">N'hésitez pas à me contacter pour tout renseignement ou demande de rendez-vous</p>
       <i class="fas fa-map-marker marker-right" id="contact-marker-right"></i>
     </div>
+    <div class="contact-details-wrapper">
+      <div class="contact-details-left">
+        <p>Uniquement sur rendez-vous <br>
+        Du lundi au vendredi de 17h30 À 20h30 <br>
+        Le samedi de 9h30 à 13h30</p>
+        <p><a class="dark-underline-link" href="tel:+33785244989"> +33 7 85 24 49 89</a> <br>
+        <a class="dark-underline-link" href="mailto:ogieremilie.sophrologie@gmail.com">ogieremilie.sophrologie@gmail.com</a></p>
+        <p>2 impasse de l'étang - 13250 Saint Chamas</p>
+      </div>
+      <div class="contact-details-right">
+          <div
+          id="map"
+          style="width: 100%;
+          height: 600px;"
+          data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+        ></div>
+      </div>
+    </div>
+    <div class="contact-form"></div>
   </div>
 </section>
