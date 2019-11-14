@@ -8,6 +8,7 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { initMapbox } from './components/init_mapbox';
 import { toogleNav } from './components/mobile_nav';
 import './components/form_validation';
+import './components/back_to_top';
 
 
 // Sidenav
