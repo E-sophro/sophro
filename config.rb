@@ -16,6 +16,12 @@ activate :external_pipeline,
   source: 'dist',
   latency: 1
 
+  activate :blog do |blog|
+    blog.permalink = "actualites/{title}.html"
+    blog.sources = "posts/{year}-{month}-{day}-{title}.html"
+    blog.layout = "blog-layout"
+  end
+
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
 
