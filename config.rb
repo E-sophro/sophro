@@ -17,9 +17,9 @@ activate :external_pipeline,
   latency: 1
 
   activate :blog do |blog|
-    blog.permalink = "actualites/{title}.html"
-    blog.sources = "posts/{year}-{month}-{day}-{title}.html"
-    blog.layout = "blog-layout"
+    blog.permalink = 'actualites/{title}.html'
+    blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+    blog.layout = 'blog-layout'
   end
 
 # ------ Uncomment and adapt if you want to use i18n ------
