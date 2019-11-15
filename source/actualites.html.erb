@@ -1,12 +1,24 @@
-<h1>Recent articles</h1>
+---
+title: Actualités - Emilie Ogier Sophrologie
+---
 
-<% blog.articles.each do | article | %>
-  <article>
-    <h2>
-      <%= article.title %>
-    </h2>
+<section class="page" id="actualites">
+  <div class="banner banner-pages">
+    <div class="page-title container">
+      <h1>Actualités</h1>
+    </div>
+  </div>
+  <div class="actualites_content page-container container">
+      <% blog.articles.each do | article | %>
+      <article>
+        <div class="blog-card">
+          <% link_to article do %>
+            <%= image_tag article.data.image , class: "blog-card-pic", alt: "Actualités - Emilie Ogier Sophrologie" %>
+            <h2><%= article.title %></h2>
+          <% end %>
+        </div>
+      </article>
+    <% end %>
 
-    <%= link_to 'Read more', article %>
-  </article>
-
-<% end %>
+  </div>
+</section>
