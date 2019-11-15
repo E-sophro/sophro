@@ -15,10 +15,11 @@ title: Actualités - Emilie Ogier Sophrologie
           <% link_to article do %>
             <%= image_tag article.data.image , class: "blog-card-pic", alt: "Actualités - Emilie Ogier Sophrologie" %>
             <h2><%= article.title %></h2>
+            <hr>
+            <p><small><%= article.data.date.strftime("%d-%m-%Y") %></small> </p>
           <% end %>
         </div>
       </article>
     <% end %>
-
   </div>
 </section>
