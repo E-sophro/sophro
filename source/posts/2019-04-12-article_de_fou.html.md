@@ -1,7 +1,9 @@
 ---
 title: Article 2 du blog
 date: 2019-04-12
+description: Cette semaine atelier thématique rien du tout. prenez rdv
 image: assets/images/uploads/post_pic2.png
+author: Jean de la Fontaine
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minus blanditiis suscipit sit recusandae doloremque maxime eum laborum, error nihil voluptates magni illo, ab corrupti veritatis. Ipsam ad tempora alias.
