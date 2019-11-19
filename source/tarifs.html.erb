@@ -8,7 +8,7 @@ title: Tarifs - Emilie Ogier Sophrologie
       <h1>Tarifs</h1>
     </div>
   </div>
-  <div class="tarif_content page-container container">
+  <div class="page-container container" id="tarif_content">
     <div class="seance-indiv-wrapper">
       <h2 class="subtitle">Séances individuelles</h2>
       <p>A mon cabinet à Saint Chamas ou à domicile (frais de déplacement en supplément au-delà de 15 km).</p>
@@ -32,17 +32,8 @@ title: Tarifs - Emilie Ogier Sophrologie
           </ul>
         </div>
         <div class="seance-card" id="seance-card3">
-          <h3>Tarifs réduits</h3>
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarifs réduits"%>
-          <p><small>(étudiants, retraités, pôle emploi)</small></p>
-          <p class="price"><strong>40€</strong> / la séance</p>
-          <ul class="list-styled">
-            <li>10 séances pour 350€</li>
-          </ul>
-        </div>
-        <div class="seance-card" id="seance-card4">
           <h3>Séance Express</h3>
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573485985/card-kids.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarifs séance express"%>
+          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1574179357/card_express.jpg", class: "img-fluid rounded thumb-pic", alt: "Tarifs séance express"%>
           <p><small>(une pause axée sur la détente et le lâcher prise)</small></p>
           <p class="price"><strong>25€</strong> / la séance</p>
           <ul class="list-styled">
@@ -50,6 +41,7 @@ title: Tarifs - Emilie Ogier Sophrologie
           </ul>
         </div>
       </div>
+      <p>Des tarifs réduits sont prévus pour les étudiants, les demandeurs d'emploi et les retraités.</p>
       <p>Veuillez <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'informations.</p>
     </div>
     <div class="seance-groupe-wrapper">
@@ -60,8 +52,8 @@ title: Tarifs - Emilie Ogier Sophrologie
       <p><strong>Attention</strong> : le nombre de participants est limité. Votre inscription est nécessaire pour pouvoir vous accueillir dans les meilleures conditions.</p>
       <div class="card-grid-wrapper">
         <div class="seance-card" id="group-card1">
-          <h3>Groupes</h3>
-          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573491403/card-group.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances en groupe"%>
+          <h3>Les mini groupes Sophro</h3>
+          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1574179484/card_mini_group.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances en groupe"%>
           <p><small>(mini groupes de 3 - 4 personnes)</small></p>
           <p class="price"><strong>15€</strong> / la séance</p>
           <ul class="list-styled">
@@ -69,14 +61,20 @@ title: Tarifs - Emilie Ogier Sophrologie
           </ul>
         </div>
         <div class="seance-card" id="group-card2">
-          <h3>Groupes Thématique</h3>
+          <h3>Groupes à thème</h3>
           <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1573491403/card-group.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances thématique en groupe"%>
           <p><small>Groupes de 5 à 10 personnes sur un thème spécifique (consulter les actualités)</small></p>
           <p class="price"><strong>10€</strong> / par personne par séance</p>
         </div>
+        <div class="seance-card" id="group-card3">
+          <h3>Groupes Duo</h3>
+          <%= image_tag "https://res.cloudinary.com/duzajevzf/image/upload/v1574179802/card_duo.jpg", class: "img-fluid rounded thumb-pic", alt: "Séances en duo"%>
+          <p><small>Pour les couples, parent/enfant</small></p>
+          <p class="price"><strong>xx€</strong> / par séance</p>
+        </div>
       </div>
       <p> <strong>Entreprises, associations et institutions</strong> : je propose la création d’ateliers sur mesure en fonction de vos attentes.</p>
-      <p>Par exemple :</p>
+      <p class="text-left">Par exemple :</p>
       <ul class="list-styled">
         <li>Ateliers collectifs hebdomadaires ou bi-hebdomadaires</li>
         <li>Ateliers collectifs à thème (gestion du stress, confiance en soi, cohésion d’équipe) : un trimestre pour approfondir un thème</li>
@@ -95,12 +93,13 @@ title: Tarifs - Emilie Ogier Sophrologie
         <li><strong>Validité</strong> : 1 an</li>
       </ul>
       <br>
-      <p><strong><u>Tarifs</u></strong> :</p>
+      <p class="text-left"><strong><u>Tarifs</u></strong> :</p>
       <ul class="list-styled">
         <li>50€ pour 1 séance « Découverte de la sophrologie »</li>
         <li>90€ pour 2 séances « Découverte de la sophrologie »</li>
         <li>135€ pour 3 séances « Découverte de la sophrologie »</li>
       </ul>
+      <br><br>
       <p>Retrait des cartes cadeaux sur place ou envoi par courrier, dès réception du règlement.</p>
       <p>Je vous invite à <%= link_to "me contacter", "contact.html", class: "dark-underline-link" %> pour plus d'informations.</p>
     </div>

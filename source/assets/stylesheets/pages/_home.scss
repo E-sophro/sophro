@@ -41,10 +41,13 @@
 // END SECTION BANNER
 
 // SECTION HOME CONTENT
+.home-content {
+  text-align: justify;
+}
+
 .description-text {
   margin-top: 30px;
   font-size: 1.1em;
-  text-align: center;
 }
 
 .separator-salmon {
@@ -177,6 +180,7 @@
   font-style: italic;
   line-height: 1.8;
   color: $white;
+  text-align: justify;
 }
 .testimony-container .testimony p {
   position: relative;
@@ -244,6 +248,7 @@
   font-style: italic;
   margin: 8px 20px 0 20px;
   padding: 0 20px;
+  text-align: justify;
 }
 
 .author {
