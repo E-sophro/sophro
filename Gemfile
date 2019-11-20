@@ -11,7 +11,6 @@ gem 'middleman-pry'
 gem 'dotenv-rails', '>= 2.7.2', groups: [:development, :test]
 gem 'middleman-favicon-maker'
 gem "middleman-blog"
-gem 'readingtime'
 
 # Fix critical github warning
 gem 'actionview', '>= 5.0.7.2'

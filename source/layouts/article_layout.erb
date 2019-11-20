@@ -6,7 +6,7 @@
         <div class="post-meta">
           <span class="post-meta-author"><%= current_page.data.author %></span><i class="fas fa-circle"></i>
           <time datetime="<%= current_page.data.date %>"><i class="far fa-calendar-alt"></i><%= current_page.data.date.strftime("%d/%m/%Y") %></time><i class="fas fa-circle"></i>
-          <span class="readingtime"><i class="far fa-clock"></i><%= current_article.body.reading_time :format => :approx %> de lecture</span>
+          <span class="reading_time"></span>
         </div>
       </header>
       <div class="article-image">
@@ -18,6 +18,3 @@
     </article>
   </div>
 <% end %>
-
-<%=  %>
-<%  %>
