@@ -2,21 +2,21 @@
   <div class="nav-menu d-none d-md-block d-xl-block">
     <ul class="nav-list">
       <li class="navbar-item"><%= link_to "Accueil", "/", class:"navbar-link" %></li>
-      <li class="navbar-item"><%= link_to "Qui suis-je?", "qui_suis_je.html", class:"navbar-link" %></li>
+      <li class="navbar-item"><%= link_to "Qui suis-je?", "/qui_suis_je", class:"navbar-link" %></li>
       <li class="navbar-item dropdown" id="dropdown-link">
         <a class="dropdown-toggle" id="dropdown-trigger-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             La sophrologie
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li class="dropdown-item"><%= link_to "Origine et définition", "origine_et_definition.html", class:"dropdown-item" %></li>
-            <li class="dropdown-item"><%= link_to "Principes", "principes.html", class:"dropdown-item" %></li>
-            <li class="dropdown-item"><%= link_to "Champs d'application", "champs_application.html", class:"dropdown-item" %></li>
-            <li class="dropdown-item"><%= link_to "Une séance de sophrologie", "une_seance_de_sophrologie.html", class:"dropdown-item" %></li>
+            <li class="dropdown-item"><%= link_to "Origine et définition", "/origine_et_definition", class:"dropdown-item" %></li>
+            <li class="dropdown-item"><%= link_to "Principes", "/principes", class:"dropdown-item" %></li>
+            <li class="dropdown-item"><%= link_to "Champs d'application", "/champs_application", class:"dropdown-item" %></li>
+            <li class="dropdown-item"><%= link_to "Une séance de sophrologie", "/une_seance_de_sophrologie", class:"dropdown-item" %></li>
           </ul>
       </li>
-      <li class="navbar-item"><%= link_to "Tarifs", "tarifs.html", class:"navbar-link" %></li>
-      <li class="navbar-item"><%= link_to "Contact", "contact.html", class:"navbar-link" %></li>
-      <li class="navbar-item"><%= link_to "Actualités", "actualites.html", class:"navbar-link" %></li>
+      <li class="navbar-item"><%= link_to "Tarifs", "/tarifs", class:"navbar-link" %></li>
+      <li class="navbar-item"><%= link_to "Contact", "/contact", class:"navbar-link" %></li>
+      <li class="navbar-item"><%= link_to "Actualités", "/actualites", class:"navbar-link" %></li>
     </ul>
   </div>
   <!-- Burger menu for small screens -->
@@ -28,8 +28,8 @@
     </button>
     <div class="sidenav">
       <ul class="sidenav-ul">
-        <li class="sidenav-item"><%= link_to "Accueil", "index.html", class:"sidenav-link navbar-link" %></li>
-        <li class="sidenav-item"><%= link_to "Qui suis-je?", "qui_suis_je.html", class:"sidenav-link navbar-link" %></li>
+        <li class="sidenav-item"><%= link_to "Accueil", "/", class:"sidenav-link navbar-link" %></li>
+        <li class="sidenav-item"><%= link_to "Qui suis-je?", "/qui_suis_je", class:"sidenav-link navbar-link" %></li>
         <!-- Sidenav dropdown -->
         <li class="sidenav-dropdown sidenav-item">
           <a class="collapse-menu-trigger sidenav-link navbar-link" href="#sidenavCollapse" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="sidenavCollapse">
@@ -38,23 +38,23 @@
           </a>
           <ul class="collapse" id="sidenavCollapse">
             <li class="collapse-li">
-              <%= link_to "Origine et définition", "origine_et_definition.html", class:"sidenav-collapse-item" %>
+              <%= link_to "Origine et définition", "/origine_et_definition", class:"sidenav-collapse-item" %>
             </li>
             <li class="collapse-li">
-              <%= link_to "Principes", "principes.html", class:"sidenav-collapse-item" %>
+              <%= link_to "Principes", "/principes", class:"sidenav-collapse-item" %>
             </li>
             <li class="collapse-li">
-              <%= link_to "Champs d'application", "champs_application.html", class:"sidenav-collapse-item" %>
+              <%= link_to "Champs d'application", "/champs_application", class:"sidenav-collapse-item" %>
             </li>
             <li class="collapse-li">
-              <%= link_to "Une séance de sophrologie", "une_seance_de_sophrologie.html", class:"sidenav-collapse-item" %>
+              <%= link_to "Une séance de sophrologie", "/une_seance_de_sophrologie", class:"sidenav-collapse-item" %>
             </li>
           </ul>
         </li>
         <!-- END Sidenav dropdown -->
-        <li class="sidenav-item"><%= link_to "Tarifs", "tarifs.html", class:"sidenav-link navbar-link" %></li>
-        <li class="sidenav-item"><%= link_to "Contact", "contact.html", class:"sidenav-link navbar-link" %></li>
-        <li class="sidenav-item"><%= link_to "Actualités", "actualites.html", class:"sidenav-link navbar-link" %></li>
+        <li class="sidenav-item"><%= link_to "Tarifs", "/tarifs", class:"sidenav-link navbar-link" %></li>
+        <li class="sidenav-item"><%= link_to "Contact", "/contact", class:"sidenav-link navbar-link" %></li>
+        <li class="sidenav-item"><%= link_to "Actualités", "/actualites", class:"sidenav-link navbar-link" %></li>
       </ul>
       <div class="social-wrapper">
         <div class="social-links-sidenav">

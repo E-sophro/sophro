@@ -11,16 +11,19 @@ activate :autoprefixer do |prefix|
 end
 
 activate :external_pipeline,
-  name: :webpack,
-  command: build? ? 'yarn run build' : 'yarn run start',
-  source: 'dist',
-  latency: 1
+name:    :webpack,
+command: build? ? 'yarn run build' : 'yarn run start',
+source: 'dist',
+latency: 1
 
-  activate :blog do |blog|
-    blog.permalink = 'actualites/{title}.html'
-    blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
-    blog.layout = "article_layout"
-  end
+# pretty urls
+activate :directory_indexes
+
+activate :blog do |blog|
+  blog.permalink = 'actualites/{title}.html'
+  blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+  blog.layout = 'article_layout'
+end
 
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
