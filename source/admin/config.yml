@@ -1,0 +1,18 @@
+backend:
+  name: git-gateway
+
+media_folder: source/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: actualites
+    label: Actualités
+    folder: source/posts/
+    extension: .html.md
+    format: frontmatter
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Publish Date, name: date, widget: datetime}
+      - {label: Body, name: body, widget: markdown}
