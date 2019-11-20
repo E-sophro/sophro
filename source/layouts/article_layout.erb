@@ -1,8 +1,20 @@
 <% wrap_layout :layout do %>
   <div class="article_container container">
     <article class="article-content">
-      <h1 class="article-title"><%= current_page.data.title %></h1>
-      <%= yield %>
+      <header class="article-header">
+        <h1 class="article-title"><%= current_page.data.title %></h1>
+        <div class="post-meta">
+          <span class="post-meta-author"><%= current_page.data.author %></span><i class="fas fa-circle"></i>
+          <time datetime="<%= current_page.data.date %>"><i class="far fa-calendar-alt"></i><%= current_page.data.date.strftime("%d/%m/%Y") %></time><i class="fas fa-circle"></i>
+          <span class="readingtime"><i class="far fa-clock"></i><%= current_article.body.reading_time :format => :approx %> de lecture</span>
+        </div>
+      </header>
+      <div class="article-image">
+          <%= image_tag current_page.data.image %>
+      </div>
+      <div class="article-body">
+        <%= yield %>
+      </div>
     </article>
   </div>
 <% end %>
