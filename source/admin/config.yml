@@ -5,8 +5,8 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: blog
-    label: Blog
+  - name: acrticle
+    label: Article
     folder: source/posts/
     extension: .html.md
     format: frontmatter
