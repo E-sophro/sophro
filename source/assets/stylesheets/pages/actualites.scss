@@ -1,0 +1,136 @@
+.actualites_content {
+  margin: 50px auto;
+}
+
+.blog-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 180px;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  margin-bottom: 20px;
+  background: $white;
+  line-height: 1.4;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+  transition: all 0.3s ease-in-out;
+  a {
+    color: inherit;
+    &:hover {
+      color: $green;
+    }
+  }
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 5px 7px 10px -2px rgba(79, 79, 79, 0.8);
+    .photo {
+      transform: scale(1.2) rotate(3deg);
+    }
+  }
+  .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+  }
+  .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform .2s;
+  }
+  .details,
+  .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+  }
+
+  .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left .2s;
+    background: rgba(#000, .6);
+    color: $white;
+    padding: 40px 25px;
+    width: 100%;
+    height: 101%;
+    font-size: 16px;
+    font-weight: lighter;
+    li {
+      margin: 10px auto;
+    }
+    .fa-user, .fa-calendar {
+      margin-right: 10px;
+      font-size:16px;
+    }
+  }
+
+  .description {
+    padding: 1rem;
+    background: $white;
+    position: relative;
+    z-index: 1;
+    h1 {
+      line-height: 1;
+      margin: 0;
+      font-size: 1.6rem;
+    }
+    p {
+      color: $gray;
+      margin: 1.5rem 0;
+    }
+  }
+  &:hover {
+    .details {
+      left: 0%;
+    }
+  }
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+    max-width: 700px;
+    .meta {
+      flex-basis: 40%;
+      height: auto;
+    }
+    .description {
+      flex-basis: 60%;
+      &:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+.blogPost-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.blogTitle_sep {
+  width: 30%;
+  margin: 15px 0;
+  border-top: 3px solid $green;
+}

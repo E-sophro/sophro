@@ -1,0 +1,32 @@
+---
+title: Actualités - Emilie Ogier Sophrologie
+---
+
+<section class="page" id="actualites">
+  <div class="banner banner-pages">
+    <div class="page-title container">
+      <h1>Actualités</h1>
+    </div>
+  </div>
+  <div class="actualites_content page-container container">
+    <% blog.articles.each do | article | %>
+      <article>
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo" style="background-image: url('<%= image_path article.data.image %>')"></div>
+            <ul class="details">
+              <li class="article-author"><i class="fas fa-user"></i><%= article.data.author %></li>
+              <li class="date"><i class="far fa-calendar-alt"></i><%= article.data.date.strftime("%d/%m/%Y") %></li>
+            </ul>
+          </div>
+          <div class="description">
+            <h1><%= article.title %></h1>
+            <hr class="blogTitle_sep">
+            <p><%= article.data.description %></p>
+          </div>
+          <%= link_to "", article, class: "blogPost-link" %>
+        </div>
+      </article>
+    <% end %>
+  </div>
+</section>

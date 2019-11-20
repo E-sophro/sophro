@@ -11,10 +11,19 @@ activate :autoprefixer do |prefix|
 end
 
 activate :external_pipeline,
-  name: :webpack,
-  command: build? ? 'yarn run build' : 'yarn run start',
-  source: 'dist',
-  latency: 1
+name:    :webpack,
+command: build? ? 'yarn run build' : 'yarn run start',
+source: 'dist',
+latency: 1
+
+# pretty urls
+activate :directory_indexes
+
+activate :blog do |blog|
+  blog.permalink = 'actualites/{title}.html'
+  blog.sources = 'posts/{year}-{month}-{day}-{title}.html'
+  blog.layout = 'article_layout'
+end
 
 # ------ Uncomment and adapt if you want to use i18n ------
 # activate :i18n, mount_at_root: :fr, langs: [:fr, :en]
@@ -42,4 +51,13 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
+end
+
+# Method to estimate read time for blog posts
+def reading_time(input)
+  words_per_minute = 180
+  words = input.split.size
+  minutes = (words / words_per_minute).floor
+  minutes_label = minutes == 1 ? ' minute' : ' minutes'
+  minutes.positive? ? "about #{minutes} #{minutes_label}" : 'less than 1 minute'
 end
