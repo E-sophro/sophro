@@ -2,7 +2,7 @@
 author: Emilie Ogier
 title: Mini groupe - Lâcher prise
 description: 'Au menu cette semaine, un atelier sur le lâcher prise. Prenez un rendez-vous!'
-date: 2019-11-19T19:00:07.167Z
+date: 2019-11-20T19:00:07.167Z
 image: /images/uploads/post_pic2.png
 ---
 **Démarrage d'un protocole de 8 séances sur le thème du lâcher prise.** Tous les samedi matins de 9h30 à 10h30 au cabinet, à partir du samedi 8 juin 2019.
