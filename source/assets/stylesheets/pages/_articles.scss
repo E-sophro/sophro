@@ -1,6 +1,7 @@
 .article_container {
   margin: 50px auto;
   max-width: 920px;
+  min-height: 59vh;
 }
 
 .article-content {
@@ -8,17 +9,17 @@
 }
 
 .article-header {
-  max-width: 710px;
   margin: auto;
 }
 
 .article-title {
   color: $green;
   margin: 0 auto;
-  padding: 15px 0;
+  padding: 15px 0 40px;
   min-height: 40px;
   font-size: calc(2vw + 20px);
   word-break: break-word;
+  text-align: center;
 }
 
 
@@ -60,4 +61,24 @@
   margin: 0.95em 0 1.2em;
   padding: 0.2em;
   line-height: 1.6em;
+  text-align: justify;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .article-header {
+    text-align: center;
+  }
+}
+
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1366px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+  .article-header {
+    text-align: center;
+  }
 }
