@@ -5,8 +5,8 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: actualites
-    label: Actualités
+  - name: blog
+    label: Blog
     folder: source/posts/
     extension: .html.md
     format: frontmatter
