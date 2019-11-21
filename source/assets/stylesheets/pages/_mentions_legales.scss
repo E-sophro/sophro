@@ -1,0 +1,12 @@
+.terms_content {
+  margin-top: 50px;
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: $dark-gray;
+    text-decoration: none;
+  }
+}
