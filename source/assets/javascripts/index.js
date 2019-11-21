@@ -1,8 +1,8 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import '@fortawesome/fontawesome-free/js/all';
 import 'mapbox-gl/dist/mapbox-gl.css';
+import "@babel/polyfill";
 
 // components JS files
 import { initMapbox } from './components/init_mapbox';

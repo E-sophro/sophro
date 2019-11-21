@@ -18,20 +18,26 @@
     "eslint-plugin-import": "^2.17.2",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
+    "purgecss-webpack-plugin": "^1.6.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^1.0.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "^4.31.0",
     "webpack-cli": "^3.3.2"
   },
   "scripts": {
     "start": "NODE_ENV=development ./node_modules/webpack/bin/webpack.js --watch -d --color",
-    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p"
+    "build": "NODE_ENV=production ./node_modules/webpack/bin/webpack.js --bail -p",
+    "dev": "webpack --watch --mode=development",
+    "prod": "webpack --mode=production"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.1",
+    "@babel/polyfill": "^7.7.0",
     "bootstrap": "^4.3.1",
+    "glob": "^7.1.6",
     "jquery": "^3.4.1",
     "mapbox-gl": "^1.5.0",
-    "popper.js": "^1.15.0"
+    "popper.js": "^1.15.0",
+    "postcss-preset-env": "^6.7.0"
   }
 }

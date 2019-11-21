@@ -37,7 +37,7 @@ function validate(inputToValidate) {
     if ($(inputToValidate).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
       return false;
     }
-  } else if ($(input).val().trim() === '') {
+  } else if ($(inputToValidate).val().trim() === '') {
     return false;
   }
   return true;

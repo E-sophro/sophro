@@ -10,8 +10,7 @@ const readingTime = () => {
       result = `${value} min de lecture`;
     }
     const htmlElement = document.querySelector(".reading_time");
-    htmlElement.insertAdjacentHTML("beforeend", `<i class="far fa-clock"></i> ${result}`);
-    console.log("i am running");
+    htmlElement.insertAdjacentHTML("beforeend", `<i class="far fa-clock"></i>${result}`);
   }
 };
 
