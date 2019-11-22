@@ -265,6 +265,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   margin: 80px 70px;
 }
 
@@ -309,13 +310,13 @@
     padding: 0 0px;
   }
   .sophro-syndicate {
-    margin: 80px 40px;
+    margin: 80px 20px 50px;
   }
   .syndicats-logos {
-    width: 100px;
+    width: 120px;
   }
   #formation-logo {
-    width: 150px;
+    width: 170px;
   }
   .footer-social {
     margin: 20px 25px 20px 0px;
@@ -361,11 +362,14 @@
 
 @media only screen
   and (min-device-width: 320px)
-  and (max-device-width: 812px)
+  and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
   .home-title {
     padding: 90px 0 0 20px;
+  }
+  #formation-logo-wrapper {
+    margin: 20px auto 0;
   }
 }
 
