@@ -26,7 +26,7 @@
     <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
     <script type="text/javascript">
       tarteaucitron.init({
-        "privacyUrl": "mentions_legales",
+        "privacyUrl": "https://www.emilieogier-sophrologie.fr/mentions_legales",
         "hashtag": "#tarteaucitron",
         "cookieName": "tarteaucitron",
         "orientation": "bottom",
@@ -40,6 +40,7 @@
         "moreInfoLink": true,
         "useExternalCss": false,
       });
+      (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
       (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
       (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
       (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');

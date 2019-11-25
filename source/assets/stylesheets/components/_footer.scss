@@ -71,13 +71,9 @@
   }
 }
 
-// .footer-bottom-item {
-//   flex: 1 1 0;
-//   width: 0;
-// }
-
-
 #legals {
+  display: flex;
+  justify-content: center;
   a {
     color: $dark-gray;
     text-decoration: none;
@@ -86,6 +82,12 @@
     color: $dark-gray;
     text-decoration: underline;
   }
+}
+
+#cookies-settings {
+  font-size: 14px;
+  margin: 0 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

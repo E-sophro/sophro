@@ -14,23 +14,17 @@
       <div class="article-body">
         <%= yield %>
       </div>
+      <hr class="separator-beige">
       <div class="social-media-sharing">
-          <div class="fb-share-button"
-          data-href="https://www.emilieogier-sophrologie.fr/<% current_page.url %>"
-          data-layout="button"
-          data-size="large">
+        <span class="tac_addtoanyshare"></span>
+        <div class="a2a_kit a2a_kit_size_40 a2a_default_style">
+          <a class="a2a_button_facebook"></a>
+          <a class="a2a_button_twitter"></a>
+          <a class="a2a_button_linkedin"></a>
+          <a class="a2a_button_copy_link"></a>
         </div>
-        <span class="tacTwitter"></span><a data-size="large" href="https://twitter.com/share" class="twitter-share-button" data-count="vertical" data-dnt="true"></a>
-        <span class="tacLinkedin"></span><script type="IN/Share"></script>
-
-        <button class="copy-clipboard"
-          data-clipboard-text="https://www.emilieogier-sophrologie.fr<%= current_page.url %>"
-          data-tooltip="Copier l'URL">
-          <i class="fas fa-link"></i>
-        </button>
       </div>
+      <hr class="separator-beige">
     </article>
   </div>
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
-  <script type="text/javascript">new ClipboardJS('.copy-clipboard');</script>
 <% end %>
