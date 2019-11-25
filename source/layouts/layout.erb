@@ -22,6 +22,28 @@
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+        "privacyUrl": "mentions_legales",
+        "hashtag": "#tarteaucitron",
+        "cookieName": "tarteaucitron",
+        "orientation": "bottom",
+        "showAlertSmall": false,
+        "cookieslist": true,
+        "adblocker": false,
+        "AcceptAllCta" : true,
+        "highPrivacy": true,
+        "handleBrowserDNTRequest": false,
+        "removeCredit": true,
+        "moreInfoLink": true,
+        "useExternalCss": false,
+      });
+      (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
+      (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
+      (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');
+    </script>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body id="body">
@@ -30,7 +52,7 @@
     <%= partial "layouts/shared/footer" %>
     <%= partial "layouts/shared/back_to_top" %>
     <%= javascript_include_tag "bundle" %>
-    <script>
+    <script type="text/javascript">
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on("init", user => {
           if (!user) {
