@@ -21,6 +21,7 @@ title: Actualités - Emilie Ogier Sophrologie
           </div>
           <div class="description">
             <h1><%= article.title %></h1>
+            <p> <small><%= article.data.date.strftime("%d/%m/%Y") %></small> </p>
             <hr class="blogTitle_sep">
             <p><%= article.data.description %></p>
           </div>
