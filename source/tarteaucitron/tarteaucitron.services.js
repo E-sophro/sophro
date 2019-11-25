@@ -107,7 +107,7 @@ tarteaucitron.services.addtoanyfeed = {
 tarteaucitron.services.addtoanyshare = {
     "key": "addtoanyshare",
     "type": "social",
-    "name": "Veuillez autoriser les cookies pour le partage sur les réseaux sociaux.",
+    "name": "Veuillez autoriser ce cookie pour le partage sur les réseaux sociaux.",
     "uri": "https://www.addtoany.com/privacy",
     "needConsent": true,
     "cookies": [],
