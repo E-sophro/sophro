@@ -1,6 +1,7 @@
 /*jslint browser: true, evil: true */
 
 // define correct path for files inclusion
+var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
 var scripts = document.getElementsByTagName('script'),
     path = scripts[scripts.length - 1].src.split('?')[0],
     tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
@@ -1350,7 +1351,7 @@ var tarteaucitron = {
     "getLanguage": function () {
         "use strict";
 
-        var availableLanguages = 'cs,de,en,es,fr,it,nl,pl,pt,ru,el,ro,bg,ja',
+        var availableLanguages = 'fr',
             defaultLanguage = 'fr';
 
         if (tarteaucitronForceLanguage !== '') {
