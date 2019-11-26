@@ -220,8 +220,8 @@ var tarteaucitron = {
                 "AcceptAllCta" : true,
                 "moreInfoLink": true,
                 "privacyUrl": "",
-                "useExternalCss": false,
-                "useExternalJs": false
+                "useExternalCss": false
+                // "useExternalJs": false
             },
             params = tarteaucitron.parameters;
 
@@ -1430,7 +1430,7 @@ var tarteaucitron = {
                     callback();
                 }
             }
-
+console.log(!tarteaucitron.parameters.useExternalJs)
             if ( !tarteaucitron.parameters.useExternalJs ) {
                 document.getElementsByTagName('head')[0].appendChild(script);
             }
