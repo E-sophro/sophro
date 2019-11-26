@@ -2,6 +2,7 @@
 
 // define correct path for files inclusion
 var tarteaucitronForceLanguage = 'fr';
+var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
 var scripts = document.getElementsByTagName('script'),
     path = scripts[scripts.length - 1].src.split('?')[0],
     tarteaucitronForceCDN = (tarteaucitronForceCDN === undefined) ? '' : tarteaucitronForceCDN,
@@ -1348,8 +1349,8 @@ var tarteaucitron = {
     "getLanguage": function () {
         "use strict";
 
-        var availableLanguages = 'cs,en,fr,es,it,de,nl,pt,pl,ru,el',
-            defaultLanguage = 'en';
+        var availableLanguages = 'fr',
+            defaultLanguage = 'fr';
 
         if (tarteaucitronForceLanguage !== '') {
             if (availableLanguages.indexOf(tarteaucitronForceLanguage) !== -1) {
@@ -1357,7 +1358,7 @@ var tarteaucitron = {
             }
         }
 
-        if (!navigator) { return 'en'; }
+        if (!navigator) { return 'fr'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1370,7 +1371,7 @@ var tarteaucitron = {
     },
     "getLocale": function () {
         "use strict";
-        if (!navigator) { return 'en_US'; }
+        if (!navigator) { return 'fr'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1393,7 +1394,7 @@ var tarteaucitron = {
         } else if (userLanguage === 'el') {
             return 'el_EL';
         } else {
-            return 'en_US';
+            return 'fr';
         }
     },
     "addScript": function (url, id, callback, execute, attrName, attrVal) {

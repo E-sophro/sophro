@@ -50,17 +50,11 @@
     <%= partial "layouts/shared/footer" %>
     <%= partial "layouts/shared/back_to_top" %>
     <%= javascript_include_tag "bundle" %>
-    <!-- <script type="text/javascript">
+    <script type="text/javascript">
       (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
       (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
       (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
       (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');
-    </script> -->
-    <script type="text/javascript">
-      tarteaucitron.user.analyticsUa = 'UA-130123645-1';
-      tarteaucitron.user.analyticsAnonymizeIp = true;
-      tarteaucitron.user.analyticsMore = function () { };
-      (tarteaucitron.job = tarteaucitron.job || []).push('analytics');
     </script>
     <script type="text/javascript">
       if (window.netlifyIdentity) {
