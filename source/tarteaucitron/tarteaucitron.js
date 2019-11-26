@@ -1418,22 +1418,16 @@ var tarteaucitron = {
             }
 
             if (typeof callback === 'function') {
-                if ( !tarteaucitron.parameters.useExternalJs ) {
-                    script.onreadystatechange = script.onload = function () {
-                        var state = script.readyState;
-                        if (!done && (!state || /loaded|complete/.test(state))) {
-                            done = true;
-                            callback();
-                        }
-                    };
-                } else {
-                    callback();
-                }
+                script.onreadystatechange = script.onload = function () {
+                    var state = script.readyState;
+                    if (!done && (!state || /loaded|complete/.test(state))) {
+                        done = true;
+                        callback();
+                    }
+                };
             }
-console.log(!tarteaucitron.parameters.useExternalJs)
-            if ( !tarteaucitron.parameters.useExternalJs ) {
-                document.getElementsByTagName('head')[0].appendChild(script);
-            }
+
+            document.getElementsByTagName('head')[0].appendChild(script);
         }
     },
     "makeAsync": {
