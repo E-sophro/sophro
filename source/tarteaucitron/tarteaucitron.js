@@ -1,4 +1,6 @@
 /*jslint browser: true, evil: true */
+
+// define correct path for files inclusion
 var tarteaucitronForceLanguage = "fr";
 var scripts = document.getElementsByTagName('script'),
     path = scripts[scripts.length - 1].src.split('?')[0],
@@ -220,8 +222,8 @@ var tarteaucitron = {
                 "AcceptAllCta" : true,
                 "moreInfoLink": true,
                 "privacyUrl": "",
-                "useExternalCss": false
-                // "useExternalJs": false
+                "useExternalCss": false,
+                "useExternalJs": false
             },
             params = tarteaucitron.parameters;
 
@@ -1349,7 +1351,7 @@ var tarteaucitron = {
     "getLanguage": function () {
         "use strict";
 
-        var availableLanguages = 'fr',
+        var availableLanguages = 'cs,de,en,es,fr,it,nl,pl,pt,ru,el,ro,bg,ja',
             defaultLanguage = 'fr';
 
         if (tarteaucitronForceLanguage !== '') {
@@ -1358,7 +1360,7 @@ var tarteaucitron = {
             }
         }
 
-        if (!navigator) { return 'en'; }
+        if (!navigator) { return 'fr'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1371,7 +1373,7 @@ var tarteaucitron = {
     },
     "getLocale": function () {
         "use strict";
-        if (!navigator) { return 'en_US'; }
+        if (!navigator) { return 'fr'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1418,16 +1420,22 @@ var tarteaucitron = {
             }
 
             if (typeof callback === 'function') {
-                script.onreadystatechange = script.onload = function () {
-                    var state = script.readyState;
-                    if (!done && (!state || /loaded|complete/.test(state))) {
-                        done = true;
-                        callback();
-                    }
-                };
+                if ( !tarteaucitron.parameters.useExternalJs ) {
+                    script.onreadystatechange = script.onload = function () {
+                        var state = script.readyState;
+                        if (!done && (!state || /loaded|complete/.test(state))) {
+                            done = true;
+                            callback();
+                        }
+                    };
+                } else {
+                    callback();
+                }
             }
 
-            document.getElementsByTagName('head')[0].appendChild(script);
+            if ( !tarteaucitron.parameters.useExternalJs ) {
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
         }
     },
     "makeAsync": {

@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
 
 
-    <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
-    <script type="text/javascript">
+    <script src="/tarteaucitron/tarteaucitron.js"></script>
+    <script >
       tarteaucitron.init({
         "privacyUrl": "https://www.emilieogier-sophrologie.fr/mentions_legales",
         "hashtag": "#tarteaucitron",
@@ -50,7 +50,7 @@
     <%= partial "layouts/shared/footer" %>
     <%= partial "layouts/shared/back_to_top" %>
     <%= javascript_include_tag "bundle" %>
-    <script type="text/javascript">
+    <script>
       (tarteaucitron.job = tarteaucitron.job || []).push('addtoanyshare');
       (tarteaucitron.job = tarteaucitron.job || []).push('facebook');
       (tarteaucitron.job = tarteaucitron.job || []).push('twitter');
