@@ -1352,7 +1352,7 @@ var tarteaucitron = {
         "use strict";
 
         var availableLanguages = 'cs,de,en,es,fr,it,nl,pl,pt,ru,el,ro,bg,ja',
-            defaultLanguage = 'fr';
+            defaultLanguage = 'en';
 
         if (tarteaucitronForceLanguage !== '') {
             if (availableLanguages.indexOf(tarteaucitronForceLanguage) !== -1) {
@@ -1360,7 +1360,7 @@ var tarteaucitron = {
             }
         }
 
-        if (!navigator) { return 'fr'; }
+        if (!navigator) { return 'en'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
@@ -1373,7 +1373,7 @@ var tarteaucitron = {
     },
     "getLocale": function () {
         "use strict";
-        if (!navigator) { return 'fr'; }
+        if (!navigator) { return 'en_US'; }
 
         var lang = navigator.language || navigator.browserLanguage ||
                 navigator.systemLanguage || navigator.userLang || null,
