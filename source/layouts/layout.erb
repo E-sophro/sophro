@@ -47,6 +47,28 @@
       (tarteaucitron.job = tarteaucitron.job || []).push('linkedin');
     </script> -->
 
+    <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
+    <script type="text/javascript">
+      tarteaucitron.init({
+        "privacyUrl": "/privacy.html",
+        "hashtag": "#tarteaucitron",
+        "cookieName": "tartaucitron",
+        "orientation": "bottom",
+        "showAlertSmall": false,
+        "cookieslist": true,
+        "adblocker": false,
+        "AcceptAllCta" : true,
+        "highPrivacy": false,
+        "handleBrowserDNTRequest": false,
+        "removeCredit": true,
+        "moreInfoLink": true
+      });
+      tarteaucitron.user.analyticsUa = 'UA-130123645-1';
+      tarteaucitron.user.analyticsAnonymizeIp = true;
+      tarteaucitron.user.analyticsMore = function () { };
+      (tarteaucitron.job = tarteaucitron.job || []).push('analytics');
+    </script>
+
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body id="body">
