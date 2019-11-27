@@ -1,9 +1,5 @@
-/*jslint browser: true, evil: true */
 /* eslint-disable */
-
 console.log("script loaded")
-
-
 // define correct path for files inclusion
 var tarteaucitronForceLanguage = 'fr';
 var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
