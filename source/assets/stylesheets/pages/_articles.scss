@@ -65,8 +65,7 @@
 }
 
 .social-media-sharing {
-  // display: flex;
-  // justify-content: center;
+
   margin: 20px auto;
 }
 
@@ -80,6 +79,12 @@
   float: left;
   line-height: 22px !important;
   padding: 20px 10px !important;
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: #f10207;
+  text-align: center;
 }
 
 @media only screen
