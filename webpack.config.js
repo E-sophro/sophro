@@ -1,9 +1,9 @@
 const webpack = require('webpack');
 const path = require('path');
-// const glob = require('glob');
+const glob = require('glob');
 const postcssPresetEnv = require('postcss-preset-env');
-// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
-// const PurgecssPlugin = require('purgecss-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -53,16 +53,13 @@ module.exports = {
       $: "jquery",
       jQuery: 'jquery',
       Popper: [ 'popper.js', 'default' ]
-    })
-    // ,
-    // new webpack.optimize.ModuleConcatenationPlugin(),
-    // new PurgecssPlugin({
-    //   paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
-    // }),
-  ]
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new PurgecssPlugin({
+      paths: glob.sync(`${path.join(__dirname, 'src')}/**/*`, { nodir: true }),
+    }),
+  ],
+  optimization: {
+    minimizer: [ new UglifyJsPlugin() ],
+  }
 };
-
-// ,
-//   optimization: {
-//     minimizer: [ new UglifyJsPlugin() ],
-//   }

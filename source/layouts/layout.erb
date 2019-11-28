@@ -22,27 +22,7 @@
     <%= stylesheet_link_tag "application" %>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-
-
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
-    <script type="text/javascript" src="/tarteaucitron/tarteaucitron.js"></script>
-    <script type="text/javascript">
-      tarteaucitron.init({
-        "privacyUrl": "/privacy.html",
-        "hashtag": "#tarteaucitron",
-        "cookieName": "tartaucitron",
-        "orientation": "bottom",
-        "showAlertSmall": false,
-        "cookieslist": true,
-        "adblocker": false,
-        "AcceptAllCta" : true,
-        "highPrivacy": false,
-        "handleBrowserDNTRequest": false,
-        "removeCredit": true,
-        "moreInfoLink": true
-      });
-    </script>
   </head>
   <body id="body">
     <%= partial "layouts/shared/navbar" %>
@@ -61,11 +41,5 @@
         });
       }
     </script>
-        <script type="text/javascript">
-          tarteaucitron.user.analyticsUa = 'UA-130123645-1';
-          tarteaucitron.user.analyticsAnonymizeIp = true;
-          tarteaucitron.user.analyticsMore = function () { };
-          (tarteaucitron.job = tarteaucitron.job || []).push('analytics');
-        </script>
   </body>
 </html>
