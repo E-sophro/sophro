@@ -1,5 +1,4 @@
 /* eslint-disable */
-console.log("script loaded")
 // define correct path for files inclusion
 var tarteaucitronForceLanguage = 'fr';
 var tarteaucitronForceCDN = window.location.protocol + '//' + window.location.host + '/tarteaucitron/';
@@ -205,6 +204,7 @@ var tarteaucitron = {
     },
     "load": function () {
         "use strict";
+
         var cdn = tarteaucitron.cdn,
             language = tarteaucitron.getLanguage(),
             pathToLang = cdn + 'tarteaucitron.' + language + '.js',
@@ -250,6 +250,7 @@ var tarteaucitron = {
 
         // Step 1: load css
         if ( !tarteaucitron.parameters.useExternalCss ) {
+            console.log(linkElement)
             linkElement.rel = 'stylesheet';
             linkElement.type = 'text/css';
             linkElement.href = cdn + 'css/tarteaucitron.css?v=' + tarteaucitron.version;
@@ -257,6 +258,8 @@ var tarteaucitron = {
         }
         // Step 2: load language and services
         tarteaucitron.addScript(pathToLang, '', function () {
+
+
 
           if(tarteaucitronCustomText !== ''){
             tarteaucitron.lang = tarteaucitron.AddOrUpdate(tarteaucitron.lang, tarteaucitronCustomText);
@@ -1401,7 +1404,7 @@ var tarteaucitron = {
         "use strict";
         var script,
             done = false;
-
+console.log(script)
         if (execute === false) {
             if (typeof callback === 'function') {
                 callback();
@@ -1426,7 +1429,7 @@ var tarteaucitron = {
                     }
                 };
             }
-
+console.log(document.getElementsByTagName('head')[0].appendChild(script))
             document.getElementsByTagName('head')[0].appendChild(script);
         }
     },
