@@ -1379,20 +1379,20 @@ var tarteaucitron = {
 
         if (userLanguage === 'fr') {
             return 'fr_FR';
-        } else if (userLanguage === 'en') {
-            return 'en_US';
-        } else if (userLanguage === 'de') {
-            return 'de_DE';
-        } else if (userLanguage === 'es') {
-            return 'es_ES';
-        } else if (userLanguage === 'it') {
-            return 'it_IT';
-        } else if (userLanguage === 'pt') {
-            return 'pt_PT';
-        } else if (userLanguage === 'nl') {
-            return 'nl_NL';
-        } else if (userLanguage === 'el') {
-            return 'el_EL';
+        // } else if (userLanguage === 'en') {
+        //     return 'en_US';
+        // } else if (userLanguage === 'de') {
+        //     return 'de_DE';
+        // } else if (userLanguage === 'es') {
+        //     return 'es_ES';
+        // } else if (userLanguage === 'it') {
+        //     return 'it_IT';
+        // } else if (userLanguage === 'pt') {
+        //     return 'pt_PT';
+        // } else if (userLanguage === 'nl') {
+        //     return 'nl_NL';
+        // } else if (userLanguage === 'el') {
+        //     return 'el_EL';
         } else {
             return 'fr';
         }
