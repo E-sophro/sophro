@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/tarteaucitron/lang/tarteaucitron.fr.js"
+  [headers.values]
+  Content-Type = application/javascript

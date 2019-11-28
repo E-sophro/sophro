@@ -1,4 +1,4 @@
-/*global tarteaucitron */
+/* eslint-disable */
 tarteaucitron.lang = {
 
     "middleBarHead": "☝ 🍪",
