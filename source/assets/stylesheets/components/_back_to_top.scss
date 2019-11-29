@@ -1,6 +1,6 @@
 .back_to_top {
   position: fixed;
-  bottom: 50px;
+  bottom: 70px;
   right: 10px;
   text-align: center;
   transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
@@ -17,9 +17,10 @@
   cursor: pointer;
   background-color: $green;
   border:none;
+  box-shadow: 3px 2px 6px 0px rgba(0,0,0,0.4);
 }
 .back_to_top.show {
-  opacity: 0.8;
+  opacity: 0.9;
   visibility: visible;
 }
 
@@ -49,4 +50,23 @@
 .back_to_top:hover .back_top_text {
   bottom: -40px;
   opacity: 1;
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+  .back_to_top .show {
+    right: 5px;
+  }
+  #backToTop {
+    width: 40px;
+    height: 40px;
+  }
+  .fa-chevron-up {
+    font-size: 24px;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+  }
 }
