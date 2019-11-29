@@ -25,3 +25,21 @@ initMapbox();
 
 // reading time calculator for blog posts
 readingTime();
+
+
+document.addEventListener( 'DOMContentLoaded', () => {
+  const cookie = tarteaucitron.cookie.read();
+  if (cookie === "!addtoanyshare=false") {
+    const socialMediaDiv = document.querySelector('.social-media-sharing');
+    socialMediaDiv.insertAdjacentHTML("afterbegin",
+      `<p class="disclaimer">
+        <i class="fas fa-exclamation-triangle"></i>
+        L'activation des cookies est nécessaire afin
+        de bénéficier des fonctionnalités relatives au partage sur les réseaux sociaux.
+        <i class="fas fa-exclamation-triangle"></i>
+        <span class="tooltiptext">AddToAny (share) est le plugin de partage sur les réseaux sociaux.
+        <i></i>
+        </span>
+      </p>`);
+  }
+});

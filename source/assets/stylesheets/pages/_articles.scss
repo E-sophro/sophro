@@ -65,7 +65,6 @@
 }
 
 .social-media-sharing {
-
   margin: 20px auto;
 }
 
@@ -73,7 +72,6 @@
   width: fit-content;
   margin: auto;
 }
-
 
 .a2a_default_style a {
   float: left;
@@ -85,6 +83,49 @@
   font-size: 14px;
   color: #f10207;
   text-align: center;
+  position: relative;
+}
+
+.disclaimer .tooltiptext {
+  min-width:50%;
+  top:-10px;
+  left:50%;
+  transform:translate(-50%, -100%);
+  padding:10px 20px;
+  color:#212529;
+  background-color:$beige;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-shadow:3px 2px 5px 0 rgba(0,0,0,0.4);
+  visibility:hidden;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.disclaimer:hover .tooltiptext {
+  visibility:visible; opacity:1;
+}
+
+.disclaimer .tooltiptext i {
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.disclaimer .tooltiptext i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color:$beige;
 }
 
 @media only screen
