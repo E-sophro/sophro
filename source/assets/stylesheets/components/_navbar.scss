@@ -2,7 +2,7 @@
   background-color: $light-gray;
   position: relative;
   z-index: 100;
-  box-shadow:0 4px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.6);
 }
 
 .nav-menu {
@@ -20,7 +20,7 @@
   text-align: center;
 }
 
-.nav-list li.dropdown:hover > ul.dropdown-menu {
+.nav-list li.dropdown:hover>ul.dropdown-menu {
   display: block;
 }
 
@@ -32,7 +32,8 @@
 
 
 
-.navbar-link, .dropdown-item {
+.navbar-link,
+.dropdown-item {
   padding: 12px 20px;
   color: $dark-gray;
   font-size: 18px;
@@ -71,7 +72,7 @@
 }
 
 .dropdown-menu {
-  top:95%;
+  top: 95%;
   padding: 0;
   margin: 0;
 }
@@ -91,14 +92,18 @@
   height: 70px;
   background-color: $light-gray;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+#logo-sidenav {
+  height: 70px;
 }
 
 .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  opacity:0;
+  opacity: 0;
   z-index: 1;
   top: 0;
   left: 0;
@@ -108,9 +113,10 @@
   transition: 0.6s;
   padding-top: 40px;
 }
+
 .sidenav-ul {
-    margin-top: 30px;
-    margin-left: 50px;
+  margin-top: 30px;
+  margin-left: 50px;
 }
 
 .show-sidenav {
@@ -149,6 +155,7 @@
   cursor: pointer;
   font-size: 48px;
   padding: 0px 20px;
+
   &:hover {
     color: $white;
   }
@@ -240,12 +247,12 @@
     &::after {
       top: -20px;
       transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-      opacity 0.1s linear;
+        opacity 0.1s linear;
     }
 
     &::before {
       transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
-      transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+        transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
   }
 
@@ -259,58 +266,56 @@
         top: 0;
         opacity: 0;
         transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-        opacity 0.1s 0.22s linear;
+          opacity 0.1s 0.22s linear;
       }
 
       &::before {
         top: 0;
         transform: rotate(-90deg);
         transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
-        transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+          transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
     }
   }
 }
 
 // responsive styling
-@media only screen
-  and (min-width: 1101px)
-  and (max-width: 1349px) {
+@media only screen and (min-width: 1101px) and (max-width: 1349px) {
   .nav-menu {
     width: 80%;
     margin: 0 auto;
   }
 }
 
-@media only screen
-  and (min-width: 768px)
-  and (max-width: 1100px) {
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
   .nav-menu {
     width: 100%;
   }
+
   .navbar-link {
     font-size: 16px;
     padding: 12px 10px;
   }
+
   #dropdown-trigger-link {
     font-size: 16px;
   }
 }
 
 // iphones all
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
   .sidenav-ul {
-  margin: 50px 0 0 10px;
+    margin: 50px 0 0 10px;
   }
+
   .sidenav-link {
-    font-size:22px;
+    font-size: 22px;
   }
+
   .collapse-li {
     margin-left: 50px;
   }
+
   .sidenav-collapse-item {
     font-size: 16px;
   }
