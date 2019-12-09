@@ -8,31 +8,29 @@ title: Actualités - Emilie Ogier Sophrologie
       <h1>Actualités</h1>
     </div>
   </div>
-
-
   <div class="actualites_content page-container container">
-    <% blog.tags.each do | tag, articles | %>
+    <% blog.tags.sort { |a, b| b <=> a }.each do | tag, articles | %>
     <div class="category">
       <h2 class="subtitle" id="tag"><%= tag %></h2>
       <% articles.each do |article| %>
-        <article>
-          <div class="blog-card">
-            <div class="meta">
-              <div class="photo" style="background-image: url('<%= image_path article.data.image %>')"></div>
-              <ul class="details">
-                <li class="article-author"><i class="fas fa-user"></i><%= article.data.author %></li>
-                <li class="date"><i class="far fa-calendar-alt"></i><%= article.data.date.strftime("%d/%m/%Y") %></li>
-              </ul>
-            </div>
-            <div class="description">
-              <h1><%= article.title %></h1>
-              <p> <small><%= article.data.date.strftime("%d/%m/%Y") %></small> </p>
-              <hr class="blogTitle_sep">
-              <p><%= article.data.description %></p>
-            </div>
-            <%= link_to "", article, class: "blogPost-link" %>
+      <article>
+        <div class="blog-card">
+          <div class="meta">
+            <div class="photo" style="background-image: url('<%= image_path article.data.image %>')"></div>
+            <ul class="details">
+              <li class="article-author"><i class="fas fa-user"></i><%= article.data.author %></li>
+              <li class="date"><i class="far fa-calendar-alt"></i><%= article.data.date.strftime("%d/%m/%Y") %></li>
+            </ul>
           </div>
-        </article>
+          <div class="description">
+            <h1><%= article.title %></h1>
+            <p> <small><%= article.data.date.strftime("%d/%m/%Y") %></small> </p>
+            <hr class="blogTitle_sep">
+            <p><%= article.data.description %></p>
+          </div>
+          <%= link_to "", article, class: "blogPost-link" %>
+        </div>
+      </article>
       <% end %>
     </div>
     <% end %>

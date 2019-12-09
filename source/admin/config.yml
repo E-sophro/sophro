@@ -5,7 +5,7 @@ media_folder: source/images/uploads
 public_folder: /images/uploads
 
 collections:
-  - name: acrticle
+  - name: article
     label: Article
     folder: source/posts/
     extension: .html.md
@@ -15,7 +15,7 @@ collections:
     fields:
       - { label: Auteur, name: author, widget: string }
       - { label: Titre, name: title, widget: string }
-      - { label: Categorie, name: tag, widget: string }
+      - { label: Categorie, name: tags, , widget: "select", options: ["Actualités", "Ateliers"] }
       - { label: Description, name: description, widget: string }
       - { label: Date de publication, name: date, widget: datetime }
       - { label: Image, name: image, widget: image }
