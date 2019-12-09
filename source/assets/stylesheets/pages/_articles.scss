@@ -26,7 +26,9 @@
 .post-meta {
   font-size: 14px;
   margin-bottom: 20px;
-  time, .reading_time {
+
+  time,
+  .reading_time {
     font-weight: lighter;
   }
 }
@@ -43,7 +45,8 @@
   opacity: 0.6;
 }
 
-.fa-calendar-alt, .fa-clock {
+.fa-calendar-alt,
+.fa-clock {
   font-size: 16px;
   margin-right: 5px;
 }
@@ -51,7 +54,6 @@
 .article-image {
   img {
     width: 100%;
-    height: auto;
     max-height: 400px;
     object-fit: contain;
   }
@@ -87,61 +89,55 @@
 }
 
 .disclaimer .tooltiptext {
-  min-width:50%;
-  top:-10px;
-  left:50%;
-  transform:translate(-50%, -100%);
-  padding:10px 20px;
-  color:#212529;
-  background-color:$beige;
-  font-size:13px;
-  border-radius:8px;
-  position:absolute;
-  z-index:99999999;
-  box-shadow:3px 2px 5px 0 rgba(0,0,0,0.4);
-  visibility:hidden;
-  opacity:0;
+  min-width: 50%;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  padding: 10px 20px;
+  color: #212529;
+  background-color: $beige;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-shadow: 3px 2px 5px 0 rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
   transition: all 0.5s ease-in-out;
 }
 
 .disclaimer:hover .tooltiptext {
-  visibility:visible; opacity:1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .disclaimer .tooltiptext i {
-  position:absolute;
-  top:100%;
-  left:50%;
-  margin-left:-12px;
-  width:24px;
-  height:12px;
-  overflow:hidden;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
 }
 
 .disclaimer .tooltiptext i::after {
-  content:'';
-  position:absolute;
-  width:12px;
-  height:12px;
-  left:50%;
-  transform:translate(-50%,-50%) rotate(45deg);
-  background-color:$beige;
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: $beige;
 }
 
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 812px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
   .article-header {
     text-align: center;
   }
 }
 
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1) {
   .article-header {
     text-align: center;
   }

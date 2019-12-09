@@ -11,11 +11,12 @@ collections:
     extension: .html.md
     format: frontmatter
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
-      - {label: Auteur, name: author, widget: string}
-      - {label: Titre, name: title, widget: string}
-      - {label: Description, name: description, widget: string}
-      - {label: Date de publication, name: date, widget: datetime}
-      - {label: Image, name: image, widget: image}
-      - {label: Article, name: body, widget: markdown}
+      - { label: Auteur, name: author, widget: string }
+      - { label: Titre, name: title, widget: string }
+      - { label: Categorie, name: tag, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Date de publication, name: date, widget: datetime }
+      - { label: Image, name: image, widget: image }
+      - { label: Article, name: body, widget: markdown }
