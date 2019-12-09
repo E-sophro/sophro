@@ -4,7 +4,7 @@ title: Je teste le placement
 tag: Actualités
 description: blablablala
 date: 2019-12-09T16:50:34.029Z
-image: /images/uploads/water-1761027_1280.jpg
+image: /images/uploads/stone-316225_1280.jpg
 ---
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur temporibus aliquam eligendi, natus harum consectetur, provident sint in esse cum non laudantium. Accusamus modi harum nulla aliquid aspernatur tempore possimus.
 
