@@ -1,7 +1,7 @@
 ---
 author: Emilie Ogier
 title: Mini groupe - Découverte de la sophrologie
-tags: Ateliers
+tags: Actualités
 description: Cette semaine atelier thématique en groupe sur la découverte de la sophrologie
 date: 2019-11-21T11:27:18.077Z
 image: /images/uploads/flight-landscape-nature-sky-36717.jpg
