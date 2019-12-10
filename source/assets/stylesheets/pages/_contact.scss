@@ -1,11 +1,11 @@
 .contact-rdv {
   margin: 25px 0;
   padding: 0 20px;
-  text-align:center;
+  text-align: center;
 }
 
 #contact-marker-right {
-  margin-top:1px;
+  margin-top: 1px;
 }
 
 // Mapbox styling
@@ -23,6 +23,7 @@
   text-align: center;
   font-family: $body-font;
 }
+
 // END Mapbox styling
 
 
@@ -86,7 +87,7 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 {
+.input100:focus+.focus-input100 {
   box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,7 +144,7 @@ textarea.input100 {
   left: 0px;
   padding: 0 45px 0 22px;
   pointer-events: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #fa4251;
   line-height: 1.2;
 }
@@ -185,6 +186,7 @@ textarea.input100 {
   .alert-validate::before {
     padding: 0 30px 0 10px;
   }
+
   .true-validate::after,
   .btn-hide-validate {
     right: 10px;
@@ -195,6 +197,7 @@ textarea.input100 {
   .contact-form {
     padding: 0;
   }
+
   .wrap-contact100 {
     padding: 20px 0 2px 0;
   }
@@ -206,17 +209,20 @@ textarea.input100 {
     justify-content: space-between;
     align-items: center;
   }
+
   #map {
     height: 380px;
     width: 450px;
     margin: auto;
   }
+
   .wrap-contact100 {
     width: 100%;
     border-radius: 10px;
     padding: 0 100px 25px 100px;
   }
+
   .contact-form {
-  margin-top: 100px;
+    margin-top: 100px;
   }
 }
