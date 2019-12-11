@@ -1,14 +1,13 @@
 ---
 author: Emilie Ogier
-title: Mini groupe - Lâcher prise
+title: Mini groupe - Commencer l'année 2020 avec sérénité
 tags: Ateliers
-description: 'Au menu cette semaine, un atelier sur le lâcher prise. Prenez un rendez-vous!'
+description: Séances de sophrologie pour attaquer la nouvelle année avec sérénité
 date: 2019-11-21T16:20:45.344Z
-image: /images/uploads/water-1761027_1280.jpg
+image: /images/uploads/flight-landscape-nature-sky-36717.jpg
 ---
+**Démarrage d'un protocole de 8 séances sur le thème de la nouvelle année**. Tous les samedi matins de 10h00 à 11h00 au cabinet, à partir du samedi 11 janvier 2020.
 
-**Démarrage d'un protocole de 8 séances sur le thème du lâcher prise**. Tous les samedi matins de 9h30 à 10h30 au cabinet, à partir du samedi 8 juin 2019.
+Ces séances de sophrologie sont construites pour vous permettre d’apprendre à vous écouter et à identifier vos besoins et d'acquérir des outils pour commencer la nouvelle année plus sereinement.
 
-Ces séances de sophrologie sont construites pour vous permettre d’acquérir des outils pour diminuer votre anxiété et gérer votre stress.
-
-**Au programme** : Se mettre à l’écoute de son corps, prendre un temps pour soi, libérer les tensions. lâcher prise, développer ses capacités et ses ressources.
+**Au programme** : Se mettre à l’écoute de son corps, prendre un temps pour soi, tenir ses bonnes résolutions, mieux gérer son stress, développer ses capacités et ses ressources.
