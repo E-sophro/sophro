@@ -4,7 +4,7 @@ title: Apéro Sophro
 tags: Ateliers
 description: 'Jeudi 30 janvier: Apéro Sophro à l’hôtel IBIS à Salon de Provence'
 date: 2019-12-09T08:00:30.786Z
-image: /images/uploads/APERO SOPHRO.jpg
+image: /images/uploads/apero_sophro.jpg
 ---
 Venez vous détendre le temps d'une séance de sophrologie suivie d'un apéro pour celles et ceux qui le souhaitent, jeudi 30 janvier, 18h30 à l’hôtel Ibis, Salon de Provence.
 
