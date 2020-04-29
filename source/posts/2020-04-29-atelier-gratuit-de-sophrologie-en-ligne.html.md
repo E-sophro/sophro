@@ -2,7 +2,8 @@
 author: Emilie Ogier
 title: Atelier gratuit de sophrologie en ligne
 tags: Ateliers
-description: Mini atelier de sophrologie en ligne
+description: "Rendez-vous chaque semaine que ma page FB: un atelier adulte ou
+  duo parent/enfant"
 date: 2020-04-29T15:07:42.742Z
 image: /images/uploads/i_am_happy_i_do_sophrologie.jpeg
 ---
