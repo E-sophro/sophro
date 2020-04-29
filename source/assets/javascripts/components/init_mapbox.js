@@ -15,8 +15,9 @@ const initMapbox = () => {
     });
 
     // create the popup
-    const popup = new mapboxgl.Popup({ offset: 25 })
-      .setHTML(`<h5>Emilie Ogier <br> Sophrologie</h5><br><p>2 impasse de l'étang - 13250 Saint Chamas</p>`);
+    const popup = new mapboxgl.Popup({ className: 'map-popup' })
+      .setHTML(`<h5>Emilie Ogier <br> Sophrologie</h5><br><p>2 impasse de l'étang - 13250 Saint Chamas</p>`)
+      .addTo(map);
 
     // create DOM element for the marker
     const el = document.createElement('div');

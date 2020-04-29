@@ -1,7 +1,8 @@
 import 'jquery';
 import 'popper.js';
 import 'bootstrap';
-import 'mapbox-gl/dist/mapbox-gl.css';
+
+// import 'mapbox-gl/dist/mapbox-gl.css';
 import '@babel/polyfill';
 
 // components JS files
