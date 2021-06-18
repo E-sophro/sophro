@@ -61,5 +61,6 @@ module.exports = {
   ],
   optimization: {
     minimizer: [ new UglifyJsPlugin() ],
-  }
+  },
+  devtool: 'source-map',
 };
